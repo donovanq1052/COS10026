@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content=""  />
+		<title>CWA Help Desk Appointment</title>
+	</head>
+
+	<body>
+		<figure>                                                        
+ 			<a href="https://www.swinburne.edu.au"><img id="uni_logo" src="images/logo.png" alt="swinburne_logo"></a>
+		</figure>   
+		<h1>CWA Help Desk Appointment</h1>
+
+		<!-- Help desk description -->
+		<p>
+			The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.<br><br>
+			Check Blackboard for when CWA tutors will be there.<br>
+		</p>
+
+		<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+			<!-- Student details section -->
+			<fieldset>
+				<legend>Student details</legend>
+					<p>
+						<label for="student_id">Student ID</label> 
+						<input type="text" id="student_id" name="student_id" value=" <add> "/>
+					</p>
+					<p>
+						<label for="given_name">Given Name</label> 
+						<input type="text" id="given_name" name="student_given_name"/>
+
+						<label for="family_name">Family Name</label> 
+						<input type="text" id="family_name" name="student_family_name"/>
+					</p>
+			</fieldset>
+
+			<!-- Unit details section, radio buttons here -->
+			<fieldset>
+				<legend>Your Unit</legend>
+				<p>
+					<label for="unit_code_cos10011">COS10011</label> 
+					<input type="radio" id="unit_code_cos10011" name="unit_code"/>
+
+					<label for="unit_code_cos60004">COS60004</label> 
+					<input type="radio" id="unit_code_cos60004" name="unit_code"/>
+
+					<label for="unit_code_cos60007">COS60007</label> 
+					<input type="radio" id="unit_code_cos60007" name="unit_code"/>
+				</p>
+				<p>
+					<select name="tutor_name" id="tutor_name">
+						<option value="tutor_a">Tutor A</option>
+						<option value="tutor_b">Tutor B</option>
+						<option value="tutor_c">Tutor C</option>
+						<option value="tutor_d">Tutor D</option>
+					</select>
+				</p>
+
+			</fieldset>
+
+			<!-- Issues section, select issue from checkboxes are write a description -->
+			<fieldset>
+				<legend>Issue</legend>
+				<p>
+					<label for="">HTML<label>
+					<input type="checkbox" id="html_checkbox" name="issue_category" value="html_issue" checked="checked"/>
+
+					<label for="">CSS<label>
+					<input type="checkbox" id="css_checkbox" name="issue_category" value="css_issue"/>
+
+					<label for="">JavaScript<label>
+					<input type="checkbox" id="js_checkbox" name="issue_category" value="js_issue"/>
+
+					<label for="">PHP<label>
+					<input type="checkbox" id="php_checkbox" name="issue_category" value="php_issue"/>
+
+					<label for="">MySQL<label>
+					<input type="checkbox" id="mysql_checkbox" name="issue_category" value="mysql_issue"/>
+				</p>
+			</fieldset>
+
+			<!-- Preferred date and time section, with date input & time input -->
+			<fieldset>
+				<p>
+					<label for="dob">Date</label> 
+					<input type="text" name="date" id="date" placeholder="dd/mm/yyyy" maxlength="10" size="10"
+					pattern="(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0,1,2])\/(19|20)\d{2}"/>
+				</p>
+				<p>
+					<label for="time">Time</label> 
+					<input type="text" name="time" id="time" placeholder="00:00" maxlength="5" size="10"
+										pattern="^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"/>
+				</p>
+			</fieldset>
+			
+			<input type= "submit" value="Book"/>
+			<input type= "reset" value="Reset Form"/>
+		</form>
+	</body>
+</html>
