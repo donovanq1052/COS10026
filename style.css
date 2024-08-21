@@ -9,7 +9,11 @@ I can't figure out how to get the logo to the top left of the page. I'll get the
 
 */
 
-
+/* Colour themes */
+:root {
+    --primary: #4786F4;
+    --accent: #77A6F7;
+}
 
 /* BACKGROUND */
 
@@ -29,7 +33,6 @@ height: 90px;
 border-radius: 5px;
 display: flex;
 justify-content: space-between;
-
 }
 h1 {
 font-size: 400%;
@@ -174,8 +177,32 @@ transition: background-color 0.2s ease-in;
         
 color: #000;
 background-color: #fff;
-    
 }
 
 
+/* Jobs Page */
+#jobs-page {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.jobs-list {
+    grid-column: 1/2;
+    background-color: var(--accent);
+}
+.jobs-list-box {
+    border-radius: 5%;
+    border: solid 3px white;
+}
 
+
+.main-job-box {
+    grid-column: 2/3;
+}
+.job-box {
+    background-color: var(--primary);
+}
+
+
+#jobs-footer {
+    grid-column: 1/3;
+}
