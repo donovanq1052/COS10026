@@ -29,7 +29,6 @@ height: 90px;
 border-radius: 5px;
 display: flex;
 justify-content: space-between;
-
 }
 h1 {
 font-size: 400%;
@@ -157,8 +156,11 @@ transition: background-color 0.2s ease-in;
         
 color: #000;
 background-color: #fff;
-    
 }
 
 
-
+/* Jobs Page */
+#jobs-page {
+    display: grid;
+    grid-template-columns: repeat(1fr 3fr);
+}
