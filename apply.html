@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Software & IT Solutions Application">
-    <meta name="keywords" content="Software, IT, Business, Solutions, Application">
-    <meta name="author" content="Donovan Quilty, Reeve Kariyawasaam">
-    <title>Apply | PSS IT</title>
+    <meta name="description" content="Professional Software & IT Solutions Homepage">
+    <meta name="keywords" content="Software, IT, Business, Solutions, Homepage">
+    <meta name="author" content="Donovan Quilty">
+    <title>Home | PSIS</title>
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
 <!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 <div class="header">
-    <h1>PSS IT</h1>
-    <img src="logo.png" alt="PSS IT Logo">
+    <img src="logo.png" alt="PSIS Logo">
+
+	<!--- Temporarily removed
+    <h1>PSIS</h1>
+    <div> </div>
+	Temporarily removed --->
+
 </div>
 
 <div class="navbar">
@@ -23,20 +28,20 @@
         <a href="apply.html">Apply</a>
         <a href="about.html">About Us</a>
         <a href="enhancements.html">Enhancements</a>
+        <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
     </nav>
 </div>
-<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 
 <!--- APPLY PAGE MAIN CONTENT --->
 
-<!-- A basic form for a user to submit an application --> 
+<!-- Basic form for user to apply --> 
 <div class="input-form">
     <!-- Details about the form -->
-    <h2>Submit an application </h2>
+    <h2 id="apply-title-text">APPLY </h2>
 
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-        <!-- Applicant's job reference number -->
+        <!-- applicant job reference number -->
         <fieldset>
             <label for="job-ref">Your Job Reference Number</label> 
             <input  type="text"
@@ -48,7 +53,7 @@
                     pattern="^[^\W_]+$" required/> <!-- Excl nonword chars & "_" -->
         </fieldset>
 
-        <!-- Applicant name & date of birth -->
+        <!-- applicant name & date of birth -->
         <fieldset>
 			<div>
 				<label for="first-name">First Name</label> 
@@ -87,7 +92,9 @@
 
         <!-- Gender details -->
         <fieldset>
-            <legend>Gender</legend>
+			<div class="legend-div">
+				<legend>GENDER</legend>
+			</div>
 
             <label for="radio-gender-male">Male</label> 
             <input  type="radio"
@@ -110,8 +117,8 @@
 
         <!-- Address details -->
         <fieldset>
-			<div>
-				<Legend>Address<Legend>
+			<div class="legend-div">
+				<legend>ADDRESS<legend>
 			<div>
 			<div>
 				<label for="address-street">Street Address</label>
@@ -158,8 +165,11 @@
 
         <!-- Contact details -->
         <fieldset>
+			<div class="legend-div">
+				<legend>CONTACT</legend>
+			</div>
 			<div>
-				<label for="input-email">Email Address</label> 
+				<label for="input-email">Email</label> 
 				<input  type="email"
 						name="email-address"
 						id="input-email"
@@ -169,7 +179,7 @@
 			</div>
 
 			<div>
-				<label for="input-phone">Phone Number</label>
+				<label for="input-phone">Phone</label>
 				<input  type="text"
 						name="phone-number"
 						id="input-phone"
@@ -182,7 +192,9 @@
 
         <!-- Skills details -->
         <fieldset>
-            <legend>Skills</legend>
+			<div class="legend-div">
+				<legend>SKILLS</legend>
+			</div>
 
 			<div>
 				<input type="checkbox" id="checkbox-exp-a" name="skill" value="react, js, php" checked required/>
