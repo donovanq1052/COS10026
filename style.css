@@ -18,15 +18,16 @@ I can't figure out how to get the logo to the top left of the page. I'll get the
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg")
+    background-image: url("background.jpg");
+	font-family: Verdana, Georgia, sans-serif
 }
 
 
 /* TOP OF PAGE*/
 
-.header {
+#header {
 
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 background-color:#77A6F7;
 margin: 10px;
 height: 90px;
@@ -35,11 +36,10 @@ display: flex;
 justify-content: space-between;
 }
 h1 {
-font-size: 400%;
+font-size: 3vw;
 text-align:center;
 font-family: "Century Gothic", "Gill Sans", sans-serif;
 margin: 0px;
-
 position: relative;
 top: 10%;
 }
@@ -53,7 +53,7 @@ max-height: 100%;
 
 /* NAVIGATION BAR */
 
-.navbar nav {
+#navbar nav {
 
 padding: 5px;
 background-color:#00887A;
@@ -64,10 +64,10 @@ text-align: center;
             
 }
     
-.navbar nav a {
+#navbar nav a {
     
 text-decoration: none;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -75,7 +75,7 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
     
-.navbar nav a:hover{
+#navbar nav a:hover{
     
 color: #000;
 background-color: #fff;
@@ -86,7 +86,7 @@ background-color: #fff;
 .sideright {
 
 background-color:#4786F4;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 margin-left: 10px;
 margin-right: 10px;
 margin-top: 0px;
@@ -111,12 +111,12 @@ margin-bottom: 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 110%;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
                 
 }
 
 /* FOOTER */
-.footer {
+#footer {
 background-color: #00887A;
 margin: 10px;
 height: 60px;
@@ -125,11 +125,11 @@ border-radius: 5px;
 text-align: center;
 padding: 15px;
 font-size: 90%;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
     
 }
     
-.footer ul {
+#footer ul {
     
 padding: 5px;
 margin: 10px;
@@ -139,15 +139,15 @@ text-align: center;
                 
 }
         
-.footer ul li {
+#footer ul li {
     
 display: inline;
     
 }
     
-.footer ul li a {
-        
-font-family: Verdana, Georgia, serif;
+#footer ul li a {
+text-decoration: none;      
+font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -156,7 +156,7 @@ transition: background-color 0.2s ease-in;
     
 }
         
-.footer ul li a:hover{
+#footer ul li a:hover{
         
 color: #000;
 background-color: #fff;
@@ -252,7 +252,7 @@ input[type=text] {
 .leftside {
 
     background-color:#4786F4;
-    font-family: Verdana, Georgia, serif;
+    font-family: Verdana, Georgia, sans-serif;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;
