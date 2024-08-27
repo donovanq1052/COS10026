@@ -248,7 +248,7 @@ input[type=text] {
 
 /* About Page */
 
-/* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans*/
+/* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
 .leftside {
 
     background-color:#4786F4;
@@ -262,7 +262,105 @@ input[type=text] {
     font-size: 105%;
     float: left;
     width: 260px;
-    clear: left;
-        
+    clear: left;  
     }
 
+#group-photo {
+	display: flex;
+	justify-content: center;
+}
+
+#our-members{
+    display: flex;
+    justify-content: center;
+}
+
+#our-members div{
+    border: #4786F4 solid 2px;
+    padding: 2%;
+    border-radius: 30px;
+    font-size: small;
+	margin: 0.5%;
+}
+
+#donovan{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#donovan:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#matthew{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#matthew:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#reeve{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#reeve:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#riley{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#riley:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+/* CSS for timetable inspired by https://www.youtube.com/watch?v=biI9OFH6Nmg */
+#timetable{
+	border-collapse: collapse;
+	margin:25px 0;
+	font-size: 0.9em;
+	min-width: 400px
+}
+
+#timetable thead tr{
+	background-color: #4786F4;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	font-weight: bold;
+}
+
+#timetable th, td{
+	padding:12px 15px
+}
+
+#timetable tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+#timetable tbody tr:nth-of-type(odd){
+	background-color:#ffffff;
+}
+
+#timetable tbody tr:last-of-type {
+	border-bottom: 2px solid #4786F4;
+}
