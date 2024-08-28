@@ -18,15 +18,16 @@ I can't figure out how to get the logo to the top left of the page. I'll get the
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg")
+    background-image: url("background.jpg");
+	font-family: Verdana, Georgia, sans-serif
 }
 
 
 /* TOP OF PAGE*/
 
-.header {
+#header {
 
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 background-color:#77A6F7;
 margin: 10px;
 height: 90px;
@@ -35,11 +36,10 @@ display: flex;
 justify-content: space-between;
 }
 h1 {
-font-size: 400%;
+font-size: 3vw;
 text-align:center;
 font-family: "Century Gothic", "Gill Sans", sans-serif;
 margin: 0px;
-
 position: relative;
 top: 10%;
 }
@@ -53,7 +53,7 @@ max-height: 100%;
 
 /* NAVIGATION BAR */
 
-.navbar nav {
+#navbar nav {
 
 padding: 10px;
 background-color:#00887A;
@@ -64,10 +64,10 @@ text-align: center;
             
 }
     
-.navbar nav a {
+#navbar nav a {
     
 text-decoration: none;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -75,7 +75,7 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
     
-.navbar nav a:hover{
+#navbar nav a:hover{
     
 color: #000;
 background-color: #fff;
@@ -86,7 +86,7 @@ background-color: #fff;
 #sideright1 {
 
 background-color:#4786F4;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
 margin-left: 10px;
 margin-right: 10px;
 margin-top: 2px;
@@ -128,12 +128,12 @@ margin-bottom: 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 110%;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
                 
 }
 
 /* FOOTER */
-.footer {
+#footer {
 background-color: #00887A;
 margin: 10px;
 height: 60px;
@@ -142,11 +142,11 @@ border-radius: 5px;
 text-align: center;
 padding: 15px;
 font-size: 90%;
-font-family: Verdana, Georgia, serif;
+font-family: Verdana, Georgia, sans-serif;
     
 }
     
-.footer ul {
+#footer ul {
     
 padding: 5px;
 margin: 10px;
@@ -156,15 +156,15 @@ text-align: center;
                 
 }
         
-.footer ul li {
+#footer ul li {
     
 display: inline;
     
 }
     
-.footer ul li a {
-        
-font-family: Verdana, Georgia, serif;
+#footer ul li a {
+text-decoration: none;      
+font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -173,7 +173,7 @@ transition: background-color 0.2s ease-in;
     
 }
         
-.footer ul li a:hover{
+#footer ul li a:hover{
         
 color: #000;
 background-color: #fff;
@@ -205,4 +205,179 @@ background-color: #fff;
 
 #jobs-footer {
     grid-column: 1/3;
+}
+
+/* ----------------------------- Apply Page -------------------------------- */
+.h2 {
+	display: inline;
+}
+
+.input-form {
+	/* General form stuff */
+	/*
+	background-color:#f4f5df;
+	*/
+	margin: 3% 20% 3% 20%;		/* T, R, B, L */
+	font-size: 120%;
+	font-family: sans-serif;
+	padding: 0.15% 2%;
+	border-radius: 5px;
+	gap: 20px;
+}
+
+fieldset {
+	display: block;
+	border: 0px;
+	background-color: rgb(232, 237, 218);		/* Double bg-col for backup */
+	background-color: rgb(216, 224, 121, 0.15);
+	/*
+	border: 2px solid red;
+	background-color: #CCC;
+	*/
+	backdrop-filter: blur(20px);
+	max-width: 90%;
+	padding: 16px 50px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+legend {
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+input[type=text] {
+	display: block;
+	width: 70%;
+	padding: 12px 20px;
+	margin: 0.4rem;
+	box-sizing: border-box;
+}
+
+#apply-title-text {
+	font-size: 150%;
+}
+
+
+/* About Page */
+
+/* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
+.leftside {
+
+    background-color:#4786F4;
+    font-family: Verdana, Georgia, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
+    float: left;
+    width: 260px;
+    clear: left;  
+    }
+
+#group-photo {
+	display: flex;
+	justify-content: center;
+}
+
+#our-members{
+    display: flex;
+    justify-content: center;
+}
+
+#our-members div{
+    border: #4786F4 solid 2px;
+    padding: 2%;
+    border-radius: 30px;
+    font-size: small;
+	margin: 0.5%;
+}
+
+#donovan{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#donovan:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#matthew{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#matthew:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#reeve{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#reeve:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#riley{
+    background-image: url(Stockportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+
+#riley:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.8);
+}
+/* CSS for timetable inspired by https://www.youtube.com/watch?v=biI9OFH6Nmg */
+#timetable{
+	border-collapse: collapse;
+	margin:25px 0;
+	font-size: 0.9em;
+	min-width: 400px
+}
+
+#timetable thead tr{
+	background-color: #4786F4;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	font-weight: bold;
+}
+
+#timetable th, td{
+	padding:12px 15px
+}
+
+#timetable tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+#timetable tbody tr:nth-of-type(odd){
+	background-color:#ffffff;
+}
+
+#timetable tbody tr:last-of-type {
+	border-bottom: 2px solid #4786F4;
 }
