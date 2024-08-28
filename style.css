@@ -249,25 +249,42 @@ input[type=text] {
 /* About Page */
 
 /* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
+
 .leftside {
 
-    background-color:#4786F4;
-    font-family: Verdana, Georgia, sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 105%;
-    float: left;
-    width: 260px;
-    clear: left;  
-    }
+background-color:#4786F4;
+font-family: Verdana, Georgia, sans-serif;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 0px;
+margin-bottom: 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+float: left;
+width: 260px;
+clear: left;
+    
+}
+    
+    .aboutrightside {
+
+        background-color:#77A6F7;
+        margin-left: 320px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 110%;
+        font-family: Verdana, Georgia, sans-serif;
+                        
+        }
 
 #group-photo {
 	display: flex;
 	justify-content: center;
+    margin-right: 10%;
 }
 
 #our-members{
@@ -281,6 +298,7 @@ input[type=text] {
     border-radius: 30px;
     font-size: small;
 	margin: 0.5%;
+    
 }
 
 #donovan{
@@ -341,6 +359,7 @@ input[type=text] {
 	font-size: 0.9em;
 	min-width: 400px
 }
+
 
 #timetable thead tr{
 	background-color: #4786F4;
