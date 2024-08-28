@@ -1,12 +1,9 @@
-/* "The CSS should include comments at the beginning of the CSS file to identify
-author and purpose. Individual line comments should be used as necessary to explain
-particular styles and explain where they are applied." 
-
-I can't decipher whether we're meant to write the author or purpose of each CSS element at the top here or just an overall brief
-This is not really complete yet. It looks gross. All the colors and images and the fonts are just placeholders for now.
-I can't figure out how to get the logo to the top left of the page. I'll get there
--Donovan
-
+/*
+filename: style
+authors: Donovan Quilty, Matthew Xu, Reeve Kariyasawam, Riley Craggill-Haren
+created: 14/8/2024
+last modified: 21/8/2024
+description: A style sheet for the PSIS index, apply, about and jobs pages. Part 1 of COS10026 group assignment
 */
 
 /* Colour themes */
@@ -53,6 +50,27 @@ max-height: 100%;
 
 /* NAVIGATION BAR */
 
+
+/* A hamburger menu using the checkbox trick, only displays on mobile devices. Hidden when display width is above 500px
+https://medium.com/@mukundkumra.io/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e
+https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
+GOTTA MAKE IT HIDE AND FIGURE OUT HOW TO HIDE NAV TOO
+NOT CHECKED TO SEE IF ANY OF THIS WORKS
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+*/
+#nav-mobile {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+#menu:checked ~ #nav-mobile {
+display: block;
+}
 nav {
 
 padding: 10px;
@@ -80,7 +98,6 @@ nav a:hover{
 color: #000;
 background-color: #fff;
 }
-
 
 /* INDEX.HTML SIDEBAR CONTENT */
 #sideright1 {
