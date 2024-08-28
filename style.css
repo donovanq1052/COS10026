@@ -165,27 +165,46 @@ background-color: #fff;
 
 /* Jobs Page */
 #jobs-page {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    width: 80svw;
+    margin: auto;
 }
-.jobs-list {
-    grid-column: 1/2;
-    background-color: var(--accent);
-}
-.jobs-list-box {
-    border-radius: 5%;
-    border: solid 3px white;
-}
-
-
 .main-job-box {
-    grid-column: 2/3;
-}
-.job-box {
     background-color: var(--primary);
 }
-
-
-#jobs-footer {
-    grid-column: 1/3;
+/* Truncates overflow text */
+.jobs-summary {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
+/* Content expands when toggled by user */
+.expandable-content {
+    display: none;
+}
+.job-content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+.main-content {
+    grid-column: 1/2;
+}
+.side-content {
+    grid-column: 2/3;
+}
+
+/* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
+.toggle {
+    display: none;
+}
+
+#expand-toggle:checked ~ #job1 {
+    display: block;
+}
+#expand-toggle:checked ~ #expand-btn{
+    visibility: hidden;
+}
+#collapse-toggle:checked ~ #job1 {
+    display: none;
+}
+
+/* use footer from other pages */
