@@ -42,37 +42,58 @@ top: 10%;
 }
 
 #logo {
-    margin-right: -10%;
+margin-right: -10%;
 max-width: 100%;
 max-height: 100%;
     
 }
 
-/* NAVIGATION BAR */
+/* TOP OF PAGE*/
 
-
-/* A hamburger menu using the checkbox trick, only displays on mobile devices. Hidden when display width is above 500px
-https://medium.com/@mukundkumra.io/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e
-https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
-GOTTA MAKE IT HIDE AND FIGURE OUT HOW TO HIDE NAV TOO
-NOT CHECKED TO SEE IF ANY OF THIS WORKS
-WIPWIPWIPWIPWIPWIPWIPWIPWIP
-*/
-#nav-mobile {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: none;
+/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/ 
+#hamburger {
+position: absolute;
+top: 10rem;
+left: 1.2rem;
+background: #00887A;
+z-index: 1;
+width: 200px;
+display: none;
 }
-#menu:checked ~ #nav-mobile {
+
+#hamburger a {
+color: #000;
+padding: .2em 1em;
+text-decoration: none;
+background-color: #4786F4;
+font-weight: bold;
+}
+
+#hamburger a {
 display: block;
 }
-nav {
 
+#menu {
+opacity: 0;
+}
+
+#menu:checked ~ #hamburger {
+display: block;
+}
+
+#menuimage {
+float: inline-start;
+}
+
+.menu_icon {
+width: 35px;
+height: 5px;
+background-color: black;
+margin: 6px 0;
+}
+
+
+nav {
 padding: 10px;
 background-color:#00887A;
 margin: 10px;
@@ -99,42 +120,22 @@ color: #000;
 background-color: #fff;
 }
 
-/* INDEX.HTML SIDEBAR CONTENT */
-#sideright1 {
-
-background-color:#4786F4;
-font-family: Verdana, Georgia, sans-serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 2px;
-margin-bottom: 0px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-float: right;
-width: 260px;
-clear: right;
-    
+@media screen and (max-width: 600px) {
+#navdesktop {
+display: none;
+}
 }
 
-#sideright2 {
-
-background-color:#4786F4;
-font-family: Verdana, Georgia, serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 2px;
-margin-bottom: 2px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-float: right;
-width: 260px;
-clear: right;
-        
+@media screen and (min-width: 601px) {
+#navmobile {
+display: none;
+}
 }
 
-/* MAIN TEXT CONTENT (MAYBE?) */
+/* NAVIGATION BAR/HAMBURGER MENU */
+
+
+/* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
 .main {
 
 background-color:#77A6F7;
@@ -144,9 +145,66 @@ margin-top: 10px;
 margin-bottom: 10px;
 border-radius: 5px;
 padding: 20px;
-font-size: 110%;
+font-size: 100%;
 font-family: Verdana, Georgia, sans-serif;
+width: 60%;
                 
+}
+
+#container {
+display: flex;
+}
+
+#box1 {
+background-color:#4786F4;
+font-family: Verdana, Georgia, sans-serif;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 2px;
+margin-bottom: 0px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+width: 24%;
+}
+
+#box2 {
+background-color:#4786F4;
+font-family: Verdana, Georgia, serif;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 2px;
+margin-bottom: 2px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+width: 24%;
+}
+
+.sideright {
+background-color:#4786F4;
+font-family: Verdana, Georgia, sans-serif;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 2px;
+margin-bottom: 0px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+width: 20%;
+float: right;
+clear: right;
+}
+
+@media screen and (min-width: 601px){
+#box1, #box2 {
+display: none;
+}
+}
+@media screen and (max-width: 600px){
+.sideright {
+display: none;
+}
 }
 
 #video {
@@ -158,8 +216,10 @@ margin-bottom: 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 110%;
-
+width: 94%;
 }
+
+/* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
 
 /* FOOTER */
 footer {
