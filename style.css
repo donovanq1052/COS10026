@@ -2,7 +2,7 @@
 filename: style
 authors: Donovan Quilty, Matthew Xu, Reeve Kariyasawam, Riley Craggill-Haren
 created: 14/8/2024
-last modified: 21/8/2024
+last modified: 30/8/2024
 description: A style sheet for the PSIS index, apply, about and jobs pages. Part 1 of COS10026 group assignment
 */
 
@@ -15,7 +15,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("background.jpg"); /* Taken under free use license from vecteezy.com */
 	font-family: Verdana, Georgia, sans-serif
 }
 
@@ -23,8 +23,6 @@ body {
 /* TOP OF PAGE*/
 
 header {
-
-font-family: Verdana, Georgia, sans-serif;
 background-color:#77A6F7;
 margin: 10px;
 height: 90px;
@@ -32,13 +30,14 @@ border-radius: 5px;
 display: flex;
 justify-content: space-between;
 }
+
 h1 {
 font-size: 3vw;
 text-align:center;
 font-family: "Century Gothic", "Gill Sans", sans-serif;
 margin: 0px;
 position: relative;
-top: 10%;
+top: 6%;
 }
 
 #logo {
@@ -67,10 +66,14 @@ padding: .2em 1em;
 text-decoration: none;
 background-color: #4786F4;
 font-weight: bold;
+display: block;
+transition: color 0.2s ease-in;
+transition: background-color 0.2s ease-in;
 }
 
-#hamburger a {
-display: block;
+#hamburger a:hover {
+color: #4786F4;
+background-color: #000;
 }
 
 #menu {
@@ -81,7 +84,7 @@ opacity: 0;
 display: block;
 }
 
-#menuimage {
+.menuimage {
 float: inline-start;
 }
 
@@ -106,7 +109,6 @@ text-align: center;
 nav a {
     
 text-decoration: none;
-font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -120,122 +122,78 @@ color: #000;
 background-color: #fff;
 }
 
-@media screen and (max-width: 680px) {
-#navdesktop {
-display: none;
-}
-}
 
-@media screen and (min-width: 680px) {
-#navmobile {
-display: none;
-}
-}
 
 /* NAVIGATION BAR/HAMBURGER MENU */
 
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
-.main {
 
-background-color:#77A6F7;
-margin-left: 10px;
-margin-right: 320px;
-margin-top: 10px;
-margin-bottom: 10px;
+#flexrow {
+display: flex;
+flex-flow: row wrap;
+}
+
+.flexcolumn {
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+flex: 50%;
+}
+
+.main {
+margin: 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 100%;
-font-family: Verdana, Georgia, sans-serif;
-width: 60%;
+background-color:#77A6F7;
                 
 }
 
-#container {
-display: flex;
-}
-
-#box1 {
-background-color:#4786F4;
-font-family: Verdana, Georgia, sans-serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 2px;
-margin-bottom: 0px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-width: 24%;
-}
-
-#box2 {
-background-color:#4786F4;
-font-family: Verdana, Georgia, serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 2px;
-margin-bottom: 2px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-width: 24%;
-}
-
 .sideright {
 background-color:#4786F4;
-font-family: Verdana, Georgia, sans-serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 2px;
-margin-bottom: 0px;
+margin: 20px 10px 50px 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 105%;
-width: 20%;
-float: right;
-clear: right;
-}
-
-@media screen and (min-width: 680px){
-#box1, #box2 {
-display: none;
-}
-}
-@media screen and (max-width: 680px){
-.sideright {
-display: none;
-}
 }
 
 #video {
-background-color: #00887A;
-margin-left: 10px;
-margin-right: 320px;
-margin-top: 10px;
-margin-bottom: 10px;
+background-color: #77A6F7;
+margin: 10px;
 border-radius: 5px;
 padding: 20px;
 font-size: 110%;
-width: 94%;
+width: 100%;
 }
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
 
 /* FOOTER */
+
 footer {
+background-color: #4786F4;
+margin: 10px;
+border-radius: 5px;
+padding: 20px;
+width: 100%;
+text-align: center;
+}
+
+#bottomnav {
 background-color: #00887A;
 margin: 10px;
+margin-bottom: 1px;
 height: 60px;
 clear: both;
 border-radius: 5px;
-text-align: center;
+text-align: start;
 padding: 15px;
 font-size: 90%;
-font-family: Verdana, Georgia, sans-serif;
-    
+width: 100%;
 }
     
-footer ul {
+#bottomnav ul {
     
 padding: 5px;
 margin: 10px;
@@ -245,15 +203,14 @@ text-align: center;
                 
 }
         
-footer ul li {
+#bottomnav ul li {
     
 display: inline;
     
 }
     
-footer ul li a {
+#bottomnav ul li a {
 text-decoration: none;      
-font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -262,12 +219,63 @@ transition: background-color 0.2s ease-in;
     
 }
         
-footer ul li a:hover{
+#bottomnav ul li a:hover{
         
 color: #000;
 background-color: #fff;
 }
 
+#hamburgerfooter {
+position: relative;
+bottom: 165px;
+left: -14px;
+background: #00887A;
+width: 200px;
+display: none;
+}
+
+#hamburgerfooter a {
+color: #000;
+padding: .2em 1em;
+text-decoration: none;
+background-color: #4786F4;
+font-weight: bold;
+display: block;
+transition: color 0.2s ease-in;
+transition: background-color 0.2s ease-in;
+}
+
+#hamburgerfooter a:hover {
+background-color: #000;
+color: #4786F4;
+}
+
+#menufooter {
+opacity: 0;
+}
+
+#menufooter:checked ~ #hamburgerfooter {
+display: block;
+}
+
+
+@media screen and (max-width: 680px) {
+#navdesktop {
+display: none;
+}
+.flexcolumn {
+flex: 100%;
+}
+footer p {
+position: sticky;
+}
+}
+
+@media screen and (min-width: 681px) {
+#navmobile {
+display: none;
+}
+}
 
 /* Jobs Page */
 #jobs-page {
