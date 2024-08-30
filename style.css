@@ -196,27 +196,23 @@ background-color: #fff;
 }
 
 .input-form {
-	/* General form stuff */
-	/*
-	background-color:#f4f5df;
-	*/
 	margin: 3% 20% 3% 20%;		/* T, R, B, L */
 	font-size: 120%;
 	font-family: sans-serif;
 	padding: 0.15% 2%;
 	border-radius: 5px;
+	border: 2px solid black; /* REMOVE */
 	gap: 20px;
 }
 
 fieldset {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 3;
 	border: 0px;
-	background-color: rgb(232, 237, 218);		/* Double bg-col for backup */
-	background-color: rgb(216, 224, 121, 0.15);
-	/*
-	border: 2px solid red;
-	background-color: #CCC;
-	*/
+	background-color: rgb(119, 166, 247);		/* Double bg-col for backup */
+	background-color: rgb(119, 166, 247, 0.25);
+	border: 2px solid white;
 	backdrop-filter: blur(20px);
 	max-width: 90%;
 	padding: 16px 50px;
@@ -239,10 +235,47 @@ input[type=text] {
 	padding: 12px 20px;
 	margin: 0.4rem;
 	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+}
+
+input[type=email] {
+	display: flex;
+	width: 70%;
+	padding: 12px 20px;
+	margin: 0.4rem;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+}
+
+input[type=submit], input[type=reset] {
+	background: white;
+	border: 2px solid black;
+}
+
+#form-title-text {
+	display: flex;
+	border-radius: 10px;
+	text-align: center;
+	width:10%;
+
+	max-width: 20%;
+	padding: 2% 3%;
+	background: lightblue;
+
 }
 
 #apply-title-text {
 	font-size: 150%;
+}
+
+#form-buttons-submit-reset {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid black;
+
+	justify-content: center;
 }
 
 
@@ -264,5 +297,4 @@ input[type=text] {
     width: 260px;
     clear: left;
         
-    }
-
+}
