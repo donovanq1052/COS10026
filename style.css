@@ -317,10 +317,8 @@ label {
 }
 
 input[type=text] {
-	display: block;
-	width: 70%;
+	width: 100%;
 	padding: 12px 20px;
-	margin: 0.4rem;
 	box-sizing: border-box;
 	border-radius: 10px;
 	border: none;
@@ -328,73 +326,103 @@ input[type=text] {
 
 input[type=email] {
 	display: flex;
-	width: 70%;
+	width: 100%;
 	padding: 12px 20px;
-	margin: 0.4rem;
 	box-sizing: border-box;
 	border-radius: 10px;
 	border: none;
 }
 
-input[type=submit], input[type=reset] {
-	background: white;
-	border: 2px solid black;
+select {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
 }
 
-/* main form layout, and general container class */
+textarea {
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+}
+
+/* -------------------------------- class -------------------------------- */
+
+/* for main form layout, and a reusable general container class */
 .flex-container{
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
-	background-color: rgba(71, 134, 244, 0.553);
-	backdrop-filter: blur(20px);
 }
 
-/* specific to fieldset elements in form */
+/* specific to elements of a fieldset in form */
 .fieldset-container {
 	flex-shrink: 3;
+	row-gap: 5px;
 	border: 0px;
 	background-color: rgba(71, 134, 244, 0.9);;
 	backdrop-filter: blur(10px);
 	color: white;
-	max-width: 90%;
-	padding: 16px 50px;
+	max-width: 100%;
+	padding: 2% 2%;
 	margin-bottom: 20px;
 }
 
-.input-sub-section {
-	border: 1px solid black;
-	display: inline-block;
-	padding: 1%;
+/* general input section */
+.input-section {
+	display: flex;
+	flex-direction: row;
+	column-gap: 2%;
+	/* border: 2px solid red; */
 }
 
+/* holds label & input field, used inside input-section class & by itself */
+.input-sub-section {
+	flex: 1;
+	display: inline-block;
+	/* border: 1px solid black; */
+}
+
+.form-control-button {
+	width: 50%;
+	height: 50px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 10px;
+	border: none;
+}
+
+/* --------------------------------- id --------------------------------- */
 
 /* main container specific */
-#main-container {
+#main-form-container {
 	margin: 3% 20% 3% 20%;		/* T, R, B, L */
-	padding: 0.15% 2%;
+	padding: 2% 2% 2% 2%;
+	background-color: rgba(71, 134, 244, 0.553);
+	backdrop-filter: blur(20px);
 }
 
 /* 'APPLY' title text*/
 #form-title-h2-text {
 	display: flex;
+	padding: 2% 3%;
 	justify-content: center;
-	text-align: center;
-	width: 20%;
-	max-width: 30%;
+	min-width: 20%;
+	max-width: 100%;
 	font-size: 200%;
 	color: rgb(255, 255, 255);
 	backdrop-filter: blur(30px);
-	border: 3px solid white;
+	border: 0.25rem solid white;
 	/* border-radius: 10px; */
-	padding: 2% 3%;
 }
 
-#form-buttons-submit-reset {
-	display: flex;
-	flex-direction: row;
-	border: 2px solid black;
-	justify-content: center;
+#control-btn-section {
+	/* border: 2px solid black; */
+	max-width: 100%;
 }
 
 
