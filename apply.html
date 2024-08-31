@@ -46,14 +46,14 @@
 <!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 
 <!--  APPLY PAGE MAIN CONTENT  -->
-<main class="input-form">
+<main class="flex-container" id="main-container">
 	<!-- Details about the form -->
-	<h2 id="form-title-text">APPLY </h2>
+	<h2 id="form-title-h2-text">APPLY </h2>
 
 	<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
 		<!-- job reference number -->
-		<fieldset>
+		<fieldset class="flex-container fieldset-container">
 			<label for="job-ref">Your Job Reference Number</label> 
 			<input  type="text"
 					name="job-ref"
@@ -65,7 +65,7 @@
 		</fieldset>
 
 		<!-- name & date of birth -->
-		<fieldset>
+		<fieldset class="flex-container fieldset-container">
 			<div>
 				<label for="first-name">First Name</label> 
 				<input  type="text"
@@ -101,34 +101,39 @@
 		</fieldset>
 
 		<!-- Gender details -->
-		<fieldset>
-			<legendl>GENDER</legend>
+		<fieldset class="flex-container fieldset-container">
+			<legend>GENDER</legend>
 
-			<label for="radio-gender-male">Male</label> 
-			<input  type="radio"
-					name="gender"
-					id="radio-gender-male"
-					value="male" checked>
+			<div class="input-sub-section">
+				<input  type="radio"
+				name="gender"
+				id="radio-gender-male"
+				value="male" checked>
+				<label for="radio-gender-male">Male</label>
+			</div>
 
-			<label for="radio-gender-female">Female</label> 
-			<input  type="radio"
-					name="gender"
-					id="radio-gender-female"
-					value="female">
+			<div class="input-sub-section">
+				<input  type="radio"
+						name="gender"
+						id="radio-gender-female"
+						value="female">
+				<label for="radio-gender-female">Female</label> 
+			</div>
 
-			<label for="radio-gender-other">Other</label> 
-			<input  type="radio"
-					name="gender"
-					id="radio-gender-other"
-					value="other">
+			<div class="input-sub-section">
+				<input  type="radio"
+						name="gender"
+						id="radio-gender-other"
+						value="other">
+				<label for="radio-gender-other">Other</label> 
+				</div>
 		</fieldset>
 
 		<!-- Address details -->
-		<fieldset>
-			<div class="legend-div">
-				<legend>ADDRESS<legend>
-			<div>
-			<div>
+		<fieldset class="flex-container fieldset-container">
+			<legend>ADDRESS<legend>
+
+			<div class="input-sub-section">
 				<label for="address-street">Street Address</label>
 				<input  type="text"
 						name="street-address"
@@ -137,7 +142,7 @@
 						size="20" required>
 			</div>
 
-			<div>
+			<div class="input-sub-section">
 				<label for="address-suburb">Suburb/Town</label>
 				<input  type="text"
 						name="suburb"
@@ -146,7 +151,7 @@
 						size="20" required>
 			</div>
 
-			<div>
+			<div class="input-sub-section">
 				<label for="address-state">State</label>
 				<select name="state" id="address-state" required>
 					<option value="VIC">VIC</option>
@@ -160,7 +165,7 @@
 				</select>
 			</div>
 
-			<div>
+			<div class="input-sub-section">
 				<label for="address-postcode">Postcode</label>
 				<input  type="text"
 						name="postcode"
@@ -172,7 +177,7 @@
 		</fieldset>
 
 		<!-- Contact details -->
-		<fieldset>
+		<fieldset class="flex-container fieldset-container">
 			<div class="legend-div">
 				<legend>CONTACT</legend>
 			</div>
@@ -199,7 +204,7 @@
 		</fieldset>
 
 		<!-- Skills details -->
-		<fieldset>
+		<fieldset class="flex-container fieldset-container">
 			<div class="legend-div">
 				<legend>SKILLS</legend>
 			</div>

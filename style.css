@@ -305,36 +305,9 @@ display: none;
 }
 
 /* ----------------------------- Apply Page -------------------------------- */
-.h2 {
-	display: inline;
-}
-
-.input-form {
-	margin: 3% 20% 3% 20%;		/* T, R, B, L */
-	font-size: 120%;
-	font-family: sans-serif;
-	padding: 0.15% 2%;
-	border-radius: 5px;
-	border: 2px solid black; /* REMOVE */
-	gap: 20px;
-}
-
-fieldset {
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 3;
-	border: 0px;
-	background-color: rgb(119, 166, 247);		/* Double bg-col for backup */
-	background-color: rgb(119, 166, 247, 0.25);
-	border: 2px solid white;
-	backdrop-filter: blur(20px);
-	max-width: 90%;
-	padding: 16px 50px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-}
 
 legend {
+	float: left;
 	margin-bottom: 20px;
 }
 
@@ -368,27 +341,59 @@ input[type=submit], input[type=reset] {
 	border: 2px solid black;
 }
 
-#form-title-text {
+/* main form layout, and general container class */
+.flex-container{
 	display: flex;
-	border-radius: 10px;
-	text-align: center;
-	width:10%;
-
-	max-width: 20%;
-	padding: 2% 3%;
-	background: lightblue;
-
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: rgba(71, 134, 244, 0.553);
+	backdrop-filter: blur(20px);
 }
 
-#apply-title-text {
-	font-size: 150%;
+/* specific to fieldset elements in form */
+.fieldset-container {
+	flex-shrink: 3;
+	border: 0px;
+	background-color: rgba(71, 134, 244, 0.9);;
+	backdrop-filter: blur(10px);
+	color: white;
+	max-width: 90%;
+	padding: 16px 50px;
+	margin-bottom: 20px;
+}
+
+.input-sub-section {
+	border: 1px solid black;
+	display: inline-block;
+	padding: 1%;
+}
+
+
+/* main container specific */
+#main-container {
+	margin: 3% 20% 3% 20%;		/* T, R, B, L */
+	padding: 0.15% 2%;
+}
+
+/* 'APPLY' title text*/
+#form-title-h2-text {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 20%;
+	max-width: 30%;
+	font-size: 200%;
+	color: rgb(255, 255, 255);
+	backdrop-filter: blur(30px);
+	border: 3px solid white;
+	/* border-radius: 10px; */
+	padding: 2% 3%;
 }
 
 #form-buttons-submit-reset {
 	display: flex;
 	flex-direction: row;
 	border: 2px solid black;
-
 	justify-content: center;
 }
 
