@@ -47,7 +47,7 @@
 
 <!--  APPLY PAGE MAIN CONTENT  -->
 <main class="flex-container" id="main-form-container">
-	<h2 id="form-title-h2-text">APPLY </h2>
+	<h2 id="form-main-title-h2-text">APPLY </h2>
 
 	<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
@@ -214,21 +214,41 @@
 
 		<!-- Skills details -->
 		<fieldset class="flex-container fieldset-container">
-			<legend>SKILLS</legend>
+			<legend>I HAVE EXPERIENCE WITH:</legend>
 
-			<!-- checkboxes for skills -->
-			<div class="input-section">
+			<!-- checkboxes for skills, IDs only for input-label association -->
+			<div class="flex-container">
 				<div class="input-sub-section">
-					<input type="checkbox" id="checkbox-exp-a" name="skill" value="react, js, php" checked required>
-					<label for="checkbox-exp-a">React, JS & PHP</label>
+					<input type="checkbox" id="checkbox-exp-default" name="skill" value="git" checked required>
+					<label for="checkbox-exp-default">Git</label>
 				</div>
 				<div class="input-sub-section">
-					<input type="checkbox" id="checkbox-exp-b" name="skill" value="c++">
-					<label for="checkbox-exp-b">C++</label>
+					<input type="checkbox" id="checkbox-exp-a" name="skill" value="rails">
+					<label for="checkbox-exp-a">Ruby on Rails</label>
 				</div>
 				<div class="input-sub-section">
-					<input type="checkbox" id="checkbox-exp-other" name="skill" value="other" required>
-					<label for="checkbox-exp-other">Other</label>
+					<input type="checkbox" id="checkbox-exp-b" name="skill" value="js">
+					<label for="checkbox-exp-b">JS</label>
+				</div>
+				<div class="input-sub-section">
+					<input type="checkbox" id="checkbox-exp-c" name="skill" value="php">
+					<label for="checkbox-exp-c">PHP</label>
+				</div>
+				<div class="input-sub-section">
+					<input type="checkbox" id="checkbox-exp-d" name="skill" value="mysql">
+					<label for="checkbox-exp-d">MySQL</label>
+				</div>
+				<div class="input-sub-section">
+					<input type="checkbox" id="checkbox-exp-e" name="skill" value="react">
+					<label for="checkbox-exp-e">React</label>
+				</div>
+				<div class="input-sub-section">
+					<input type="checkbox" id="checkbox-exp-f" name="skill" value="c++">
+					<label for="checkbox-exp-f">C++</label>
+				</div>
+				<div class="input-sub-section">
+					<input type="checkbox" id="checkbox-exp-other" name="skill" value="other" checked required>
+					<label for="checkbox-exp-other">Other skills</label>
 				</div>
 			</div>
 
