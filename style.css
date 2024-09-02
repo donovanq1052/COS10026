@@ -1,12 +1,9 @@
-/* "The CSS should include comments at the beginning of the CSS file to identify
-author and purpose. Individual line comments should be used as necessary to explain
-particular styles and explain where they are applied." 
-
-I can't decipher whether we're meant to write the author or purpose of each CSS element at the top here or just an overall brief
-This is not really complete yet. It looks gross. All the colors and images and the fonts are just placeholders for now.
-I can't figure out how to get the logo to the top left of the page. I'll get there
--Donovan
-
+/*
+filename: style
+authors: Donovan Quilty, Matthew Xu, Reeve Kariyasawam, Riley Craggill-Haren
+created: 14/8/2024
+last modified: 30/8/2024
+description: A style sheet for the PSIS index, apply, about and jobs pages. Part 1 of COS10026 group assignment
 */
 
 /* Colour themes */
@@ -18,16 +15,14 @@ I can't figure out how to get the logo to the top left of the page. I'll get the
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("background.jpg"); /* Taken under free use license from vecteezy.com */
 	font-family: Verdana, Georgia, sans-serif
 }
 
 
 /* TOP OF PAGE*/
 
-#header {
-
-font-family: Verdana, Georgia, sans-serif;
+header {
 background-color:#77A6F7;
 margin: 10px;
 height: 90px;
@@ -35,27 +30,74 @@ border-radius: 5px;
 display: flex;
 justify-content: space-between;
 }
+
 h1 {
 font-size: 3vw;
 text-align:center;
 font-family: "Century Gothic", "Gill Sans", sans-serif;
 margin: 0px;
 position: relative;
-top: 10%;
+top: 6%;
 }
 
-img {
-    margin-right: -10%;
+#logo {
+margin-right: -10%;
 max-width: 100%;
 max-height: 100%;
     
 }
 
-/* NAVIGATION BAR */
+/* TOP OF PAGE*/
 
-#navbar nav {
+/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/ 
+#hamburger {
+position: absolute;
+top: 10rem;
+left: 1.2rem;
+background: #00887A;
+z-index: 1;
+width: 200px;
+display: none;
+}
 
-padding: 5px;
+#hamburger a {
+color: #000;
+padding: .2em 1em;
+text-decoration: none;
+background-color: #4786F4;
+font-weight: bold;
+display: block;
+transition: color 0.2s ease-in;
+transition: background-color 0.2s ease-in;
+}
+
+#hamburger a:hover {
+color: #4786F4;
+background-color: #000;
+}
+
+#menu {
+opacity: 0;
+}
+
+#menu:checked ~ #hamburger {
+display: block;
+}
+
+.menuimage {
+float: inline-start;
+}
+
+.menu_icon {
+width: 35px;
+height: 5px;
+background-color: black;
+margin: 6px 0;
+}
+
+
+nav {
+padding: 10px;
 background-color:#00887A;
 margin: 10px;
 height: 35px;
@@ -64,10 +106,9 @@ text-align: center;
             
 }
     
-#navbar nav a {
+nav a {
     
 text-decoration: none;
-font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -75,61 +116,84 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
     
-#navbar nav a:hover{
+nav a:hover{
     
 color: #000;
 background-color: #fff;
 }
 
 
-/* INDEX.HTML SIDEBAR CONTENT */
-.sideright {
 
-background-color:#4786F4;
-font-family: Verdana, Georgia, sans-serif;
-margin-left: 10px;
-margin-right: 10px;
-margin-top: 0px;
-margin-bottom: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-float: right;
-width: 260px;
-clear: right;
-    
+/* NAVIGATION BAR/HAMBURGER MENU */
+
+
+/* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
+
+#flexrow {
+display: flex;
+flex-flow: row wrap;
 }
 
-/* MAIN TEXT CONTENT (MAYBE?) */
-.main {
+.flexcolumn {
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+flex: 50%;
+}
 
-background-color:#77A6F7;
-margin-left: 10px;
-margin-right: 320px;
-margin-top: 10px;
-margin-bottom: 10px;
+.main {
+margin: 10px;
 border-radius: 5px;
 padding: 20px;
-font-size: 110%;
-font-family: Verdana, Georgia, sans-serif;
+font-size: 100%;
+background-color:#77A6F7;
                 
 }
 
+.sideright {
+background-color:#4786F4;
+margin: 20px 10px 50px 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+}
+
+#video {
+background-color: #77A6F7;
+margin: 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 110%;
+width: 100%;
+}
+
+/* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
+
 /* FOOTER */
-#footer {
+
+footer {
+background-color: #4786F4;
+margin: 10px;
+border-radius: 5px;
+padding: 20px;
+width: 100%;
+text-align: center;
+}
+
+#bottomnav {
 background-color: #00887A;
 margin: 10px;
+margin-bottom: 1px;
 height: 60px;
 clear: both;
 border-radius: 5px;
-text-align: center;
+text-align: start;
 padding: 15px;
 font-size: 90%;
-font-family: Verdana, Georgia, sans-serif;
-    
+width: 100%;
 }
     
-#footer ul {
+#bottomnav ul {
     
 padding: 5px;
 margin: 10px;
@@ -139,15 +203,14 @@ text-align: center;
                 
 }
         
-#footer ul li {
+#bottomnav ul li {
     
 display: inline;
     
 }
     
-#footer ul li a {
+#bottomnav ul li a {
 text-decoration: none;      
-font-family: Verdana, Georgia, sans-serif;
 padding: .2em 1em;
 color: #fff;
 background-color: #000;
@@ -156,75 +219,114 @@ transition: background-color 0.2s ease-in;
     
 }
         
-#footer ul li a:hover{
+#bottomnav ul li a:hover{
         
 color: #000;
 background-color: #fff;
 }
 
+#hamburgerfooter {
+position: relative;
+bottom: 165px;
+left: -14px;
+background: #00887A;
+width: 200px;
+display: none;
+}
+
+#hamburgerfooter a {
+color: #000;
+padding: .2em 1em;
+text-decoration: none;
+background-color: #4786F4;
+font-weight: bold;
+display: block;
+transition: color 0.2s ease-in;
+transition: background-color 0.2s ease-in;
+}
+
+#hamburgerfooter a:hover {
+background-color: #000;
+color: #4786F4;
+}
+
+#menufooter {
+opacity: 0;
+}
+
+#menufooter:checked ~ #hamburgerfooter {
+display: block;
+}
+
+
+@media screen and (max-width: 680px) {
+#navdesktop {
+display: none;
+}
+.flexcolumn {
+flex: 100%;
+}
+footer p {
+position: sticky;
+}
+}
+
+@media screen and (min-width: 681px) {
+#navmobile {
+display: none;
+}
+}
 
 /* Jobs Page */
 #jobs-page {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    width: 80svw;
+    margin: auto;
 }
-.jobs-list {
-    grid-column: 1/2;
-    background-color: var(--accent);
-}
-.jobs-list-box {
-    border-radius: 5%;
-    border: solid 3px white;
-}
-
-
 .main-job-box {
-    grid-column: 2/3;
-}
-.job-box {
     background-color: var(--primary);
 }
-
-
-#jobs-footer {
-    grid-column: 1/3;
+/* Truncates overflow text */
+.jobs-summary {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
+/* Content expands when toggled by user */
+.expandable-content {
+    display: none;
+}
+.job-content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+.main-content {
+    grid-column: 1/2;
+}
+.side-content {
+    grid-column: 2/3;
+}
+
+/* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
+.toggle {
+    display: none;
+}
+
+#expand-toggle:checked ~ #job1 {
+    display: block;
+}
+#expand-toggle:checked ~ #expand-btn{
+    visibility: hidden;
+}
+#collapse-toggle:checked ~ #job1 {
+    display: none;
+}
+
+/* use footer from other pages */
 
 /* ----------------------------- Apply Page -------------------------------- */
-.h2 {
-	display: inline;
-}
-
-.input-form {
-	/* General form stuff */
-	/*
-	background-color:#f4f5df;
-	*/
-	margin: 3% 20% 3% 20%;		/* T, R, B, L */
-	font-size: 120%;
-	font-family: sans-serif;
-	padding: 0.15% 2%;
-	border-radius: 5px;
-	gap: 20px;
-}
-
-fieldset {
-	display: block;
-	border: 0px;
-	background-color: rgb(232, 237, 218);		/* Double bg-col for backup */
-	background-color: rgb(216, 224, 121, 0.15);
-	/*
-	border: 2px solid red;
-	background-color: #CCC;
-	*/
-	backdrop-filter: blur(20px);
-	max-width: 90%;
-	padding: 16px 50px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-}
 
 legend {
+	float: left;
 	margin-bottom: 20px;
 }
 
@@ -234,15 +336,126 @@ label {
 }
 
 input[type=text] {
-	display: block;
-	width: 70%;
+	width: 100%;
 	padding: 12px 20px;
-	margin: 0.4rem;
 	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
 }
 
-#apply-title-text {
-	font-size: 150%;
+input[type=email] {
+	display: flex;
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+}
+
+select {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+	resize: vertical;
+	min-height: 20px; /* get these to work */
+	max-height: 500%; /* get these to work */
+}
+
+/* -------------------------------- class -------------------------------- */
+
+/* for main form layout, and a reusable general container class */
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+}
+
+/* specific to elements of a fieldset in form */
+.fieldset-container {
+	flex-shrink: 3;
+	row-gap: 5px;
+	border: 0px;
+	background-color: rgba(71, 134, 244, 0.9);
+	backdrop-filter: blur(10px);
+	color: white;
+	max-width: 100%;
+	padding: 2% 2%;
+	margin-bottom: 20px;
+}
+
+/* general input section */
+.input-section {
+	display: flex;
+	flex-direction: row;
+	column-gap: 2%;
+	/* border: 2px solid red; */
+}
+
+/* holds label & input field, used inside input-section class & by itself */
+.input-sub-section {
+	flex: 1;
+	display: inline-block;
+	/* border: 1px solid black; */
+}
+
+.form-control-button {
+	width: 50%;
+	max-width: 15%;
+	height: 50px;
+	box-sizing: border-box;
+	font-size: small;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background:  rgba(240, 245, 255, 0.9);
+	border-radius: 10px;
+	border: none;
+}
+
+.form-control-button:hover {
+	background: white;
+	cursor: pointer;
+	border: 4px solid rgba(71, 134, 244, 0.3);
+}
+
+/* --------------------------------- id --------------------------------- */
+
+/* main container specific */
+#main-form-container {
+	margin: 3% 20% 3% 20%;		/* T, R, B, L */
+	padding: 2% 2% 2% 2%;
+	background-color: rgba(71, 134, 244, 0.531);
+	backdrop-filter: blur(20px);
+}
+
+/* 'APPLY' title text*/
+#form-title-h2-text {
+	display: flex;
+	padding: 2% 3%;
+	justify-content: center;
+	min-width: 20%;
+	max-width: 100%;
+	font-size: 200%;
+	color: rgb(255, 255, 255);
+	backdrop-filter: blur(30px);
+	border: 0.2rem solid rgba(255, 255, 255, 0.315);
+	border-radius: 10px;
+}
+
+#control-btn-section {
+	/* border: 2px solid black; */
+	justify-content: flex-end;
+	max-width: 100%;
 }
 
 

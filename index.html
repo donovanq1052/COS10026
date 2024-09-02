@@ -10,93 +10,131 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-<!---TOP OF PAGE - LOGO, NAVIGATION BAR---> <!---COPY THIS BIT AND PUT IT IN YOUR PAGES--->
-<header>
-    <div id="header">
-        <img src="logo.png" alt="PSIS Logo">
-        <h1>PSIS: Professional Software & IT Solutions</h1>
-        <div> </div>
-    </div>
-
-    <div id="navbar">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="apply.html">Apply</a>
-            <a href="about.html">About Us</a>
-            <a href="enhancements.html">Enhancements</a>
-            <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-        </nav>
-    </div>
-</header>
 <!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
+<header>
+    <img id="logo" src="logo.png" alt="PSIS Logo">
+    <h1>PSIS: Professional Software & IT Solutions</h1>
+    <div> </div>
+</header>
 
-<!---SIDEBAR CONTENT--->
-<div class="sideright">
-    <h3>Our Services</h3>
-    <ul>
-        <li>Mobile applications</li>
-        <li>Website design, development and deployment</li>
-        <li>Modernization and revamping of legacy software</li>
-        <li>Server configuration, hosting and maintenance</li>
-    </ul>
-</div>
-<div class="sideright">
-    <h3>Languages we Offer</h3>
-    <ul>
-        <li>Ruby on Rails</li>
-        <li>Javascript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>React</li>
-        <li>C++</li>
-    </ul>
+<nav>
+    <section id="navdesktop">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="about.html">About Us</a>
+    <a href="enhancements.html">Enhancements</a>
+    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+    </section>
 
-</div>
-<!---SIDEBAR CONTENT--->
+    <section id="navmobile">
+    <input type="checkbox" id="menu">
+    <label for="menu" class="menuimage">
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+    </label>
+    <div id="hamburger">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="about.html">About Us</a>
+    <a href="enhancements.html">Enhancements</a>
+    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+    </div>
+    </section>
+</nav>
+<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 
 
 <!---HOME PAGE MAIN CONTENT--->
-<div class="main">
+<section id="flexrow">
+<section class="flexcolumn">
+<section class="main">
     <h2>Professional Software & IT Solutions<br>Where innovation meets efficiency.</h2>
     <p>At PSIS, we combine innovation with efficiency to deliver professional software and IT solutions that modernize businesses and streamline workflows.<br>
         Whether you're a small business or a large enterprise, our cutting-edge, bespoke software is designed to meet your unique needs.<br>
         PSIS abides by guidelines set out by CMMI, ensuring the entire software development cycle is optimized in order to reduce overhead costs for clients.</p>
-</div>
+</section>
 
 
-
-<div class="main">
+<section class="main">
 <h2>Our Values</h2>
 <dl>
-    <dt>Communication</dt>
+    <dt><strong>Communication</strong></dt>
     <dd>Our dedicated project management team will keep you in the loop during the process of testing and optimization and will relay any additional requirements you may have to our development team</dd>
-    <dt>Quality</dt>
+    <dt><strong>Quality</strong></dt>
     <dd>All our engineers have extensive training and experience and are entirely locally based, allowing us to ensure the highest levels of quality in all our projects</dd>
-    <dt>Modernization</dt>
+    <dt><strong>Modernization</strong></dt>
     <dd>At PSIS we use the latest software development practices like RUP and Agile, as well as continuing to implement new technology as it arises to stay in sync with the market</dd>
 </dl>
+</section>
+</section>
+
+<section class="flexcolumn">
+<!---SIDEBAR CONTENT--->
+    <aside class="sideright">
+        <h3>Our Services</h3>
+        <ul>
+            <li>Mobile applications</li>
+            <li>Website design, development and deployment</li>
+            <li>Modernization and revamping of legacy software</li>
+            <li>Server configuration, hosting and maintenance</li>
+        </ul>
+    </aside>
+    <aside class="sideright">
+        <h3>Languages we Offer</h3>
+        <ul>
+            <li>Ruby on Rails</li>
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>React</li>
+            <li>C++</li>
+        </ul>
+    </aside>
+</section>
+<!---SIDEBAR CONTENT--->
+<div id="video" target="_blank">
+    <p>See our video explaining the website <a href="">here.</a></p>
 </div>
 
-<div id="video">
 
-</div>
 <!---HOME PAGE MAIN CONTENT--->
 
-<!---FOOTER--->
-<div id="footer">
+<!---FOOTER---> <!--COPY AND PASTE THIS BIT INTO YOUR OWN PAGE-->
+<section id="bottomnav">
+        <div id="navdesktop">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+            <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
+        </ul>
+        </div>
+    
+        <div id="navmobile">
+        <input type="checkbox" id="menufooter">
+        <label for="menufooter" class="menuimage">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </label>
+        <div id="hamburgerfooter">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+        <a href="enhancements.html">Enhancements</a>
+        <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+        </div>
+        </div>
+</section>
 <footer>
     <p>&copy; 2024 PSIS. All Rights Reserved.</p>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
-        <li><a href="apply.html">Apply</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="enhancements.html">Enhancements</a></li>
-        <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
-    </ul>
 </footer>
-</div>
 <!---FOOTER--->
 </body>
 </html>

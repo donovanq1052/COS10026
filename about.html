@@ -10,25 +10,40 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--TOP OF PAGE - LOGO, NAVIGATION BAR--> <!--provided by Donovan-->
-<header>
-    <div id="header">
-        <img src="logo.png" alt="PSIS Logo">
+<!--TOP OF PAGE - LOGO, NAVIGATION BAR--> <!--provided by Donovan-->
+    <header>
+        <img id="logo" src="logo.png" alt="PSIS Logo">
         <h1>PSIS: Professional Software & IT Solutions</h1>
         <div> </div>
-    </div>
+    </header>
+    
+<nav>
+    <section id="navdesktop">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="about.html">About Us</a>
+    <a href="enhancements.html">Enhancements</a>
+    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+    </section>
 
-    <div id="navbar">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="apply.html">Apply</a>
-            <a href="about.html">About Us</a>
-            <a href="enhancements.html">Enhancements</a>
-            <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-        </nav>
+    <section id="navmobile">
+    <input type="checkbox" id="menu">
+    <label for="menu" class="menuimage">
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+    </label>
+    <div id="hamburger">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="about.html">About Us</a>
+    <a href="enhancements.html">Enhancements</a>
+    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
     </div>
-</header>
+    </section>
+</nav>
 <!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
     <!-- use rem and google fonts for font and font size -->
     <h1>About Us!</h1>
@@ -164,20 +179,38 @@
         <h2>Contact Us</h2>
         <p>If you have any questions, feel free to <a href="mailto:group-email@example.com">email us</a>.</p>
     </section>
+<section id="bottomnav">
+    <div id="navdesktop">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="enhancements.html">Enhancements</a></li>
+        <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
+    </ul>
+    </div>
 
-<div id="footer">
-    <footer>
-        <p>&copy; 2024 PSIS. All Rights Reserved.</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="enhancements.html">Enhancements</a></li>
-            <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
-        </ul>
-    </footer>
-</div>
+    <div id="navmobile">
+    <input type="checkbox" id="menufooter">
+    <label for="menufooter" class="menuimage">
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+        <div class="menu_icon"></div>
+    </label>
+    <div id="hamburgerfooter">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="about.html">About Us</a>
+    <a href="enhancements.html">Enhancements</a>
+    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+    </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 PSIS. All Rights Reserved.</p>
+</footer>
 
 
 
