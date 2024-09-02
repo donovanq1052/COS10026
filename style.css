@@ -464,6 +464,7 @@ textarea {
 /* About Page */
 
 /* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
+
 .leftside {
     background-color: #4786f4;
     font-family: Verdana, Georgia, sans-serif;
@@ -477,6 +478,24 @@ textarea {
     float: left;
     width: 260px;
     clear: left;
+}
+
+.aboutrightside {
+    background-color: #77a6f7;
+    margin-left: 320px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    font-family: Verdana, Georgia, sans-serif;
+}
+
+#group-photo {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
 }
 
 #group-photo {
