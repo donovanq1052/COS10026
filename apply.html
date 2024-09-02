@@ -10,14 +10,14 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
+<!-- TOP OF PAGE - LOGO, NAVIGATION BAR -->
 <header>
     <img id="logo" src="logo.png" alt="PSIS Logo">
     <h1>PSIS: Professional Software & IT Solutions</h1>
     <div> </div>
 </header>
 <nav>
-    <section id="navdesktop">
+    <section class="navdesktop">
     <a href="index.html">Home</a>
     <a href="jobs.html">Jobs</a>
     <a href="apply.html">Apply</a>
@@ -43,7 +43,7 @@
     </div>
     </section>
 </nav>
-<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
+<!-- TOP OF PAGE - LOGO, NAVIGATION BAR -->
 
 <!--  APPLY PAGE MAIN CONTENT  -->
 <main class="flex-container" id="main-form-container">
@@ -51,7 +51,7 @@
 
 	<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-		<!-- job reference number -->
+		<!-- job reference number, uses same style classes as fieldsets -->
 		<fieldset class="flex-container fieldset-container">
 			<div class="input-sub-section">
 				<label for="job-ref">Your Job Reference Number</label> 
@@ -65,7 +65,7 @@
 			</div>
 		</fieldset>
 
-		<!-- name & date of birth -->
+		<!-- name & date of birth, uses same style classes as fieldsets -->
 		<fieldset class="flex-container fieldset-container">
 			<div class="input-section">
 				<!-- first name -->
@@ -161,6 +161,7 @@
 				<div class="input-sub-section">
 					<label for="address-state">State</label>
 					<select name="state" id="address-state" required>
+						<option value="">Please Select</option>
 						<option value="VIC">VIC</option>
 						<option value="NSW">NSW</option>
 						<option value="QLD">QLD</option>
@@ -219,15 +220,15 @@
 			<div class="input-section">
 				<div class="input-sub-section">
 					<input type="checkbox" id="checkbox-exp-a" name="skill" value="react, js, php" checked required>
-					<label for="checkbox-exp-a">React, JS & PHP<label>
+					<label for="checkbox-exp-a">React, JS & PHP</label>
 				</div>
 				<div class="input-sub-section">
-					<input type="checkbox" id="checkbox-exp-b" name="skill" value="c++"/>
-					<label for="checkbox-exp-b">C++<label>
+					<input type="checkbox" id="checkbox-exp-b" name="skill" value="c++">
+					<label for="checkbox-exp-b">C++</label>
 				</div>
 				<div class="input-sub-section">
 					<input type="checkbox" id="checkbox-exp-other" name="skill" value="other" required>
-					<label for="checkbox-exp-other">Other<label>
+					<label for="checkbox-exp-other">Other</label>
 				</div>
 			</div>
 
@@ -241,16 +242,16 @@
 
 		<!-- Apply (submit) and Clear (reset) buttons -->
 		<div class="input-section" id="control-btn-section">
-			<input type="submit" class="form-control-button" value="APPLY"/>
-			<input type="reset" class="form-control-button" value="CLEAR"/>
+			<input type="submit" class="form-control-button" value="APPLY">
+			<input type="reset" class="form-control-button" value="CLEAR">
 		</div>
 	</form>
 </main>
 <!-- APPLY PAGE MAIN CONTENT -->
 
-<!---FOOTER--->
+<!-- FOOTER -->
 <section id="bottomnav">
-	<div id="navdesktop">
+	<div class="navdesktop">
 	<ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="jobs.html">Jobs</a></li>
@@ -281,6 +282,6 @@
 <footer>
 <p>&copy; 2024 PSIS. All Rights Reserved.</p>
 </footer>
-<!---FOOTER--->
+<!-- FOOTER -->
 </body>
 </html>
