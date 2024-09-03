@@ -59,7 +59,8 @@
 						placeholder="Eg: J2rkM"
 						maxlength="5"
 						size="20"
-						pattern="^[^\W_]+$" required> <!-- Excl nonword chars & "_" -->
+						pattern="^[^\W_]+$"
+						required> <!-- Excl nonword chars & "_" -->
 			</div>
 		</fieldset>
 
@@ -178,6 +179,7 @@
 							id="address-postcode"
 							maxlength="4"
 							size="20"
+							placeholder="Eg: 1234"
 							pattern="^[\d]+$" required>
 				</div>
 			</div>
@@ -206,6 +208,7 @@
 						minlength="8"
 						maxlength="12"
 						size="20"
+						placeholder="Eg: 0400111222"
 						pattern="^[0-9 ]+$" required>
 			</div>
 		</fieldset>
@@ -251,9 +254,14 @@
 			</div>
 
 
-			<div class="input-sub-section">
+			<div class="input-sub-section" id="other-skills-container">
 				<label for="textarea-other-skills">Other Skills</label> 
-				<textarea id="textarea-other-skills" name="other-skills" rows="4" cols="40" required></textarea>
+				<textarea	id="textarea-other-skills"
+							name="other-skills"
+							rows="4"
+							cols="40"
+							placeholder="I have experience with ..."
+							required></textarea>
 			</div>
 
 		</fieldset>

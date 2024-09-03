@@ -489,9 +489,12 @@ input[type="text"], input[type="email"], select, textarea {
     justify-content: center;
     min-width: 20%;
     max-width: 100%;
-    font-size: 300%;
+    font-size: 200%;
     color: rgb(0, 0, 0);
     border-radius: 10px;
+}
+#other-skills-container {
+    margin-top: 3%;
 }
 #textarea-other-skills {
     resize: vertical;
@@ -514,7 +517,7 @@ input[type="text"], input[type="email"], select, textarea {
         column-gap: 2%;
     }
     #control-btn-section {
-        flex-direction: row; /* however form controls retain direction */
+        flex-direction: row; /* however form controls retain original direction */
     }
     .form-control-button {
         width: 80%;
