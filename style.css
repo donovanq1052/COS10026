@@ -94,7 +94,7 @@ h1 {
     margin: 6px 0;
 }
 
-nav {
+#topnav {
     padding: 10px;
     background-color: #00887a;
     margin: 10px;
@@ -103,7 +103,7 @@ nav {
     text-align: center;
 }
 
-nav a {
+#topnav a {
     text-decoration: none;
     padding: 0.2em 1em;
     color: #fff;
@@ -112,7 +112,7 @@ nav a {
     transition: background-color 0.2s ease-in;
 }
 
-nav a:hover {
+#topnav a:hover {
     color: #000;
     background-color: #fff;
 }
@@ -220,10 +220,10 @@ footer {
 }
 
 #hamburgerfooter a {
-    color: #000;
+    color: #fff;
     padding: 0.2em 1em;
     text-decoration: none;
-    background-color: #4786f4;
+    background-color: #000;
     font-weight: bold;
     display: block;
     transition: color 0.2s ease-in;
@@ -231,8 +231,8 @@ footer {
 }
 
 #hamburgerfooter a:hover {
-    background-color: #000;
-    color: #4786f4;
+    background-color: #fff;
+    color: #000;
 }
 
 #menufooter {
