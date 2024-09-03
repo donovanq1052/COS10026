@@ -17,7 +17,7 @@
     <div> </div>
 </header>
 
-<nav>
+<nav id="topnav">
     <section class="navdesktop">
     <a href="index.html">Home</a>
     <a href="jobs.html">Jobs</a>
@@ -30,9 +30,7 @@
     <section class="navmobile">
     <input type="checkbox" id="menu">
     <label for="menu" class="menuimage">
-        <div class="menu_icon"></div>
-        <div class="menu_icon"></div>
-        <div class="menu_icon"></div>
+        <img src="hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
     </label>
     <div id="hamburger">
     <a href="index.html">Home</a>
@@ -53,7 +51,7 @@
     <h2>Implement Responsive Design</h2>
     <p>On all pages, the navigation bar on both the top and bottom of the page will change from a button menu to a drop down, hamburger menu when the screen size is less than 600px <br>
         This prevents the navigation buttons from squishing too small or overlapping eachother and leaving the container <br>
-        This is done using a checkbox hidden behind 3 div tags with borders to make the shape of a hamburger menu <br>
+        This is done using a checkbox hidden behind a label containing a hamburger menu image <br>
         When the screen is smaller than 680px, the navigation buttons will be hidden and the hamburger menu will be displayed <br>
         You can see an example of this in the nav menus of all pages or on this page <a href="#navmobile">here.</a>
     </p>
@@ -68,8 +66,8 @@
 </section>
 
 <!--FOOTER-->
-<section id="bottomnav">
-    <div class="navdesktop">
+<nav id="bottomnav">
+    <section class="navdesktop">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="jobs.html">Jobs</a></li>
@@ -78,14 +76,12 @@
         <li><a href="enhancements.html">Enhancements</a></li>
         <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
     </ul>
-    </div>
+    </section>
 
-    <div class="navmobile">
+    <section class="navmobile">
     <input type="checkbox" id="menufooter">
     <label for="menufooter" class="menuimage">
-        <div class="menu_icon"></div>
-        <div class="menu_icon"></div>
-        <div class="menu_icon"></div>
+        <img src="hamburgermenuicon.png" alt="Drop Down Menu">
     </label>
     <div id="hamburgerfooter">
     <a href="index.html">Home</a>
@@ -95,8 +91,8 @@
     <a href="enhancements.html">Enhancements</a>
     <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
     </div>
-    </div>
-</section>
+    </section>
+</nav>
 <footer>
 <p>&copy; 2024 PSIS. All Rights Reserved.</p>
 </footer>

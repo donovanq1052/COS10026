@@ -87,13 +87,6 @@ h1 {
     float: inline-start;
 }
 
-.menu_icon {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
-
 #topnav {
     padding: 10px;
     background-color: #00887a;
