@@ -119,6 +119,10 @@ h1 {
 /* NAVIGATION BAR/HAMBURGER MENU */
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
+.enhancement-boxes {
+    margin: 5svh 0;
+    border-bottom: dashed 1px black;
+}
 
 #flexrow { /* Flex displays for index.html content */
     display: flex;
