@@ -14,8 +14,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 
 * {
 	box-sizing: border-box;
-	max-width: 98svw;;
-	margin: 0;
+	max-width: 95svw;;
 }
 
 /* BACKGROUND */
