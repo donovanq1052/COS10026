@@ -12,10 +12,16 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
     --accent: #77A6F7;
 }
 
+* {
+	box-sizing: border-box;
+	max-width: 97.5svw;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* BACKGROUND */
 
 body {
-    background-image: url("images/background.jpg"); /* Taken under free use license from vecteezy.com */
+    background-image: url("background.jpg"); /* Taken under free use license from vecteezy.com */
 	font-family: Verdana, Georgia, sans-serif
 }
 
@@ -23,148 +29,139 @@ body {
 /* TOP OF PAGE*/
 
 header {
-background-color:#77A6F7;
-margin: 10px;
-height: 90px;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+    background-color: #77a6f7;
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
-font-size: 3vw;
-text-align:center;
-font-family: "Century Gothic", "Gill Sans", sans-serif;
-margin: 0px;
-position: relative;
-top: 6%;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Century Gothic", "Gill Sans", sans-serif;
+    margin: 0px;
+    position: relative;
+    top: 6%;
 }
 
 #logo {
-margin-right: -10%;
-max-width: 100%;
-max-height: 100%;
-    
+    margin-right: -10%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* TOP OF PAGE*/
 
-/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/ 
-#hamburger {
-position: absolute;
-top: 10rem;
-left: 1.2rem;
-background: #00887A;
-z-index: 1;
-width: 200px;
-display: none;
+/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/
+#hamburger { /* drop down hamburger menu */
+    position: absolute;
+    top: 10rem;
+    left: 1.2rem;
+    background: #00887a;
+    width: 200px;
+    display: none;
 }
 
 #hamburger a {
-color: #000;
-padding: .2em 1em;
-text-decoration: none;
-background-color: #4786F4;
-font-weight: bold;
-display: block;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
+    color: #000;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    background-color: #4786f4;
+    font-weight: bold;
+    display: block;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
-#hamburger a:hover {
-color: #4786F4;
-background-color: #000;
+#hamburger a:hover { /*Inverts the hamburger menu colors when hovered over */
+    color: #4786f4;
+    background-color: #000;
 }
 
 #menu {
-opacity: 0;
+    opacity: 0;
 }
 
-#menu:checked ~ #hamburger {
-display: block;
+#menu:checked ~ #hamburger { /* Checkbox that displays the hamburger menu when checked */
+    display: block;
 }
 
-.menuimage {
-float: inline-start;
+.menuimage { /* hamburger menu image lable */
+    float: inline-start;
 }
 
-.menu_icon {
-width: 35px;
-height: 5px;
-background-color: black;
-margin: 6px 0;
+#topnav { /* Top navigation bar for desktop displays */
+    padding: 10px;
+    background-color: #00887a;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-
-nav {
-padding: 10px;
-background-color:#00887A;
-margin: 10px;
-height: 35px;
-border-radius: 5px;
-text-align: center;
-            
-}
-    
-nav a {
-    
-text-decoration: none;
-padding: .2em 1em;
-color: #fff;
-background-color: #000;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
-}
-    
-nav a:hover{
-    
-color: #000;
-background-color: #fff;
+#topnav a {
+    text-decoration: none;
+    padding: 0.2em 1em;
+    color: #fff;
+    background-color: #000;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
-
+#topnav a:hover { /* Changes the colour of the desktop navigation buttons when hovered over */
+    color: #000;
+    background-color: #fff;
+}
 
 /* NAVIGATION BAR/HAMBURGER MENU */
 
-
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
-
-#flexrow {
-display: flex;
-flex-flow: row wrap;
+.enhancement-boxes {
+    margin: 5svh 0;
+    border-bottom: dashed 1px black;
 }
 
-.flexcolumn {
-display: flex;
-flex-flow: column wrap;
-justify-content: center;
-flex: 50%;
+#flexrow { /* Flex displays for index.html content */
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.main {
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 100%;
-background-color:#77A6F7;
-                
+.flexcolumn { /* Flex displays for index.html content */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex: 50%;
 }
 
-.sideright {
-background-color:#4786F4;
-margin: 20px 10px 50px 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
+.main { /* Left side content of index.html */
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    background-color: #77a6f7;
 }
 
-#video {
-background-color: #77A6F7;
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 110%;
-width: 100%;
+.sideright { /* Right side content of index.html */
+    background-color: #4786f4;
+    margin: 20px 10px 50px 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
+}
+
+#video { /* Youtube link content */
+    background-color: #77a6f7;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    width: 100%;
+}
+
+.link { /* Makes all hyperlinks black to fit with accessiblity guidelines */
+color: #000;
 }
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
@@ -172,116 +169,107 @@ width: 100%;
 /* FOOTER */
 
 footer {
-background-color: #4786F4;
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-width: 100%;
-text-align: center;
+    background-color: #4786f4;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
-#bottomnav {
-background-color: #00887A;
-margin: 10px;
-margin-bottom: 1px;
-height: 60px;
-clear: both;
-border-radius: 5px;
-text-align: start;
-padding: 15px;
-font-size: 90%;
-width: 100%;
+#bottomnav { /* Bottom navigation bar */
+    background-color: #00887a;
+    margin: 10px;
+    margin-bottom: 1px;
+    height: 60px;
+    clear: both;
+    border-radius: 5px;
+    text-align: start;
+    padding: 15px;
+    font-size: 90%;
+    width: 100%;
 }
-    
-#bottomnav ul {
-    
-padding: 5px;
-margin: 10px;
-height: 35px;
-border-radius: 5px;
-text-align: center;
-                
+
+#bottomnav ul { /* Navigation buttons for bottom navigation bar */
+    padding: 5px;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
 }
-        
+
 #bottomnav ul li {
-    
-display: inline;
-    
-}
-    
-#bottomnav ul li a {
-text-decoration: none;      
-padding: .2em 1em;
-color: #fff;
-background-color: #000;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
-    
-}
-        
-#bottomnav ul li a:hover{
-        
-color: #000;
-background-color: #fff;
+    display: inline;
 }
 
-#hamburgerfooter {
-position: relative;
-bottom: 165px;
-left: -14px;
-background: #00887A;
-width: 200px;
-display: none;
+#bottomnav ul li a {
+    text-decoration: none;
+    padding: 0.2em 1em;
+    color: #fff;
+    background-color: #000;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+}
+
+#bottomnav ul li a:hover { /* Inverts colours of bottom navigation buttons when hovered */
+    color: #000;
+    background-color: #fff;
+}
+
+#hamburgerfooter { /* Drop down menu for bottom navigation bar */
+    position: relative;
+    bottom: 165px;
+    left: -14px;
+    background: #00887a;
+    width: 200px;
+    display: none;
 }
 
 #hamburgerfooter a {
-color: #000;
-padding: .2em 1em;
-text-decoration: none;
-background-color: #4786F4;
-font-weight: bold;
-display: block;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
+    color: #fff;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    background-color: #000;
+    font-weight: bold;
+    display: block;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
-#hamburgerfooter a:hover {
-background-color: #000;
-color: #4786F4;
+#hamburgerfooter a:hover { /* Inverts colours for bottom hamburger menu when hovered */
+    background-color: #fff;
+    color: #000;
 }
 
 #menufooter {
-opacity: 0;
+    opacity: 0;
 }
 
-#menufooter:checked ~ #hamburgerfooter {
-display: block;
+#menufooter:checked ~ #hamburgerfooter { /* Displays drop down menu when checkbox is checked */
+    display: block;
 }
-
 
 @media screen and (max-width: 680px) {
-#navdesktop {
-display: none;
-}
-.flexcolumn {
-flex: 100%;
-}
-footer p {
-position: sticky;
-}
+    .navdesktop {
+        display: none;
+    }
+
+    .flexcolumn {
+        flex: 100%;
+    }
 }
 
 @media screen and (min-width: 681px) {
-#navmobile {
-display: none;
-}
+    .navmobile {
+        display: none;
+    }
 }
 
 /* Jobs Page */
 #jobs-page {
     box-sizing: border-box;
     margin: auto;
-    width: 97svw;
+    width: 95svw;
     font-family: Arial, Helvetica, sans-serif;
 }
 .main-job-box {
@@ -329,7 +317,8 @@ display: none;
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: height 0.3s ease, opacity 0.3s ease; /* Transition and animation properties */
+    /* Transition animation for change in height and opacity */
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 .job-content {
     display: grid;
@@ -345,47 +334,53 @@ display: none;
 #sunshine-link {
     color: black;
 }
+/* anchor tags nested inside button-divs so that inline anchor padding is respected by parent div */
+.button-div {
+	margin: 1em 0;
+}
 
 /* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
 .toggle {
     display: none;
 }
+/* Each job box id is manually targetted according to each 'expand' job label */
 #job1-expand-toggle:checked ~ #job1 {
-    height: 60svh;
+    height: auto;
     opacity: 1;
 }
 #job1-expand-toggle:checked ~ #job1-expand-btn {
     visibility: hidden;
 }
 #job2-expand-toggle:checked ~ #job2 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job2-expand-toggle:checked ~ #job2-expand-btn {
     visibility: hidden;
 }
 #job3-expand-toggle:checked ~ #job3 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job3-expand-toggle:checked ~ #job3-expand-btn {
     visibility: hidden;
 }
 #job4-expand-toggle:checked ~ #job4 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job4-expand-toggle:checked ~ #job4-expand-btn {
     visibility: hidden;
 }
 #job5-expand-toggle:checked ~ #job5 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job5-expand-toggle:checked ~ #job5-expand-btn {
     visibility: hidden;
 }
 
+/* Media queries adjust sizing and layout of content to be optimised for medium and smaller screens */
 @media (width < 1200px) {
     .job-box {
         width: 70svw;
@@ -394,41 +389,11 @@ display: none;
         display: flex;
         flex-direction: column-reverse;
     }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: auto;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: auto;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: auto;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: auto;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: auto;
-    }
 }
 
 @media (width >= 1200px) and (width < 1600px) {
     .job-box {
         width: 75svw;
-    }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: 70svh;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: 70svh;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: 70svh;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: 70svh;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: 70svh;
     }
 }
 
@@ -716,14 +681,14 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 #dl-container dt {
-    flex: 0 0 150px;           /* Fixed width for dt elements (adjust as needed) */
+    
     font-weight: bold;         /* Bold text for dt elements */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
 }
 
 #dl-container dd {
-    flex: 1;                   /* Take remaining space for dd elements */
+    
     margin: 0;                 /* Remove default margin */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
