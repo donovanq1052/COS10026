@@ -12,6 +12,15 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
     --accent: #77A6F7;
 }
 
+<<<<<<< HEAD
+=======
+* {
+	box-sizing: border-box;
+	max-width: 97.5svw;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 /* BACKGROUND */
 
 body {
@@ -49,6 +58,7 @@ max-height: 100%;
 
 /* TOP OF PAGE*/
 
+<<<<<<< HEAD
 /* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/ 
 #hamburger {
 position: absolute;
@@ -58,6 +68,16 @@ background: #00887A;
 z-index: 1;
 width: 200px;
 display: none;
+=======
+/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/
+#hamburger { /* drop down hamburger menu */
+    position: absolute;
+    top: 10rem;
+    left: 1.2rem;
+    background: #00887a;
+    width: 200px;
+    display: none;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 #hamburger a {
@@ -71,15 +91,22 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
 
+<<<<<<< HEAD
 #hamburger a:hover {
 color: #4786F4;
 background-color: #000;
+=======
+#hamburger a:hover { /*Inverts the hamburger menu colors when hovered over */
+    color: #4786f4;
+    background-color: #000;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 #menu {
 opacity: 0;
 }
 
+<<<<<<< HEAD
 #menu:checked ~ #hamburger {
 display: block;
 }
@@ -93,6 +120,23 @@ width: 35px;
 height: 5px;
 background-color: black;
 margin: 6px 0;
+=======
+#menu:checked ~ #hamburger { /* Checkbox that displays the hamburger menu when checked */
+    display: block;
+}
+
+.menuimage { /* hamburger menu image lable */
+    float: inline-start;
+}
+
+#topnav { /* Top navigation bar for desktop displays */
+    padding: 10px;
+    background-color: #00887a;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 
@@ -122,13 +166,25 @@ color: #000;
 background-color: #fff;
 }
 
+<<<<<<< HEAD
 
+=======
+#topnav a:hover { /* Changes the colour of the desktop navigation buttons when hovered over */
+    color: #000;
+    background-color: #fff;
+}
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 
 /* NAVIGATION BAR/HAMBURGER MENU */
 
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
+.enhancement-boxes {
+    margin: 5svh 0;
+    border-bottom: dashed 1px black;
+}
 
+<<<<<<< HEAD
 #flexrow {
 display: flex;
 flex-flow: row wrap;
@@ -165,6 +221,47 @@ border-radius: 5px;
 padding: 20px;
 font-size: 110%;
 width: 100%;
+=======
+#flexrow { /* Flex displays for index.html content */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexcolumn { /* Flex displays for index.html content */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex: 50%;
+}
+
+.main { /* Left side content of index.html */
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    background-color: #77a6f7;
+}
+
+.sideright { /* Right side content of index.html */
+    background-color: #4786f4;
+    margin: 20px 10px 50px 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
+}
+
+#video { /* Youtube link content */
+    background-color: #77a6f7;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    width: 100%;
+}
+
+.link { /* Makes all hyperlinks black to fit with accessiblity guidelines */
+color: #000;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
@@ -180,6 +277,7 @@ width: 100%;
 text-align: center;
 }
 
+<<<<<<< HEAD
 #bottomnav {
 background-color: #00887A;
 margin: 10px;
@@ -201,6 +299,27 @@ height: 35px;
 border-radius: 5px;
 text-align: center;
                 
+=======
+#bottomnav { /* Bottom navigation bar */
+    background-color: #00887a;
+    margin: 10px;
+    margin-bottom: 1px;
+    height: 60px;
+    clear: both;
+    border-radius: 5px;
+    text-align: start;
+    padding: 15px;
+    font-size: 90%;
+    width: 100%;
+}
+
+#bottomnav ul { /* Navigation buttons for bottom navigation bar */
+    padding: 5px;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
         
 #bottomnav ul li {
@@ -218,6 +337,7 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
     
 }
+<<<<<<< HEAD
         
 #bottomnav ul li a:hover{
         
@@ -232,6 +352,21 @@ left: -14px;
 background: #00887A;
 width: 200px;
 display: none;
+=======
+
+#bottomnav ul li a:hover { /* Inverts colours of bottom navigation buttons when hovered */
+    color: #000;
+    background-color: #fff;
+}
+
+#hamburgerfooter { /* Drop down menu for bottom navigation bar */
+    position: relative;
+    bottom: 165px;
+    left: -14px;
+    background: #00887a;
+    width: 200px;
+    display: none;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 #hamburgerfooter a {
@@ -245,20 +380,32 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
 
+<<<<<<< HEAD
 #hamburgerfooter a:hover {
 background-color: #000;
 color: #4786F4;
+=======
+#hamburgerfooter a:hover { /* Inverts colours for bottom hamburger menu when hovered */
+    background-color: #fff;
+    color: #000;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 #menufooter {
 opacity: 0;
 }
 
+<<<<<<< HEAD
 #menufooter:checked ~ #hamburgerfooter {
 display: block;
+=======
+#menufooter:checked ~ #hamburgerfooter { /* Displays drop down menu when checkbox is checked */
+    display: block;
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 680px) {
 #navdesktop {
 display: none;
@@ -269,6 +416,11 @@ flex: 100%;
 footer p {
 position: sticky;
 }
+=======
+    .flexcolumn {
+        flex: 100%;
+    }
+>>>>>>> 98296d1523f417c391de11c96f7d12f1e8528efd
 }
 
 @media screen and (min-width: 681px) {
@@ -329,7 +481,8 @@ display: none;
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: height 0.3s ease, opacity 0.3s ease; /* Transition and animation properties */
+    /* Transition animation for change in height and opacity */
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 .job-content {
     display: grid;
@@ -345,47 +498,53 @@ display: none;
 #sunshine-link {
     color: black;
 }
+/* anchor tags nested inside button-divs so that inline anchor padding is respected by parent div */
+.button-div {
+	margin: 1em 0;
+}
 
 /* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
 .toggle {
     display: none;
 }
+/* Each job box id is manually targetted according to each 'expand' job label */
 #job1-expand-toggle:checked ~ #job1 {
-    height: 60svh;
+    height: auto;
     opacity: 1;
 }
 #job1-expand-toggle:checked ~ #job1-expand-btn {
     visibility: hidden;
 }
 #job2-expand-toggle:checked ~ #job2 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job2-expand-toggle:checked ~ #job2-expand-btn {
     visibility: hidden;
 }
 #job3-expand-toggle:checked ~ #job3 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job3-expand-toggle:checked ~ #job3-expand-btn {
     visibility: hidden;
 }
 #job4-expand-toggle:checked ~ #job4 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job4-expand-toggle:checked ~ #job4-expand-btn {
     visibility: hidden;
 }
 #job5-expand-toggle:checked ~ #job5 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job5-expand-toggle:checked ~ #job5-expand-btn {
     visibility: hidden;
 }
 
+/* Media queries adjust sizing and layout of content to be optimised for medium and smaller screens */
 @media (width < 1200px) {
     .job-box {
         width: 70svw;
@@ -394,41 +553,11 @@ display: none;
         display: flex;
         flex-direction: column-reverse;
     }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: auto;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: auto;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: auto;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: auto;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: auto;
-    }
 }
 
 @media (width >= 1200px) and (width < 1600px) {
     .job-box {
         width: 75svw;
-    }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: 70svh;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: 70svh;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: 70svh;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: 70svh;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: 70svh;
     }
 }
 
