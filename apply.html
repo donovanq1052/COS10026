@@ -10,38 +10,39 @@
     <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<!-- TOP OF PAGE - LOGO, NAVIGATION BAR -->
+<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 <header>
-    <img id="logo" src="images/logo.png" alt="PSIS Logo">
+    <img id="logo" src="logo.png" alt="PSIS Logo">
     <h1>PSIS: Professional Software & IT Solutions</h1>
     <div> </div>
 </header>
+
 <nav id="topnav">
-    <section class="navdesktop">
-    <a href="index.html">Home</a>
-    <a href="jobs.html">Jobs</a>
-    <a href="apply.html">Apply</a>
-    <a href="about.html">About Us</a>
-    <a href="enhancements.html">Enhancements</a>
-    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+    <section id="navdesktop">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+        <a href="enhancements.html">Enhancements</a>
+        <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
     </section>
 
-    <section class="navmobile">
-    <input type="checkbox" id="menu">
-    <label for="menu" class="menuimage">
-        <img src="images/hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
-    </label>
-    <div id="hamburger">
-    <a href="index.html">Home</a>
-    <a href="jobs.html">Jobs</a>
-    <a href="apply.html">Apply</a>
-    <a href="about.html">About Us</a>
-    <a href="enhancements.html">Enhancements</a>
-    <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-    </div>
+    <section id="navmobile">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menuimage">
+            <img src="hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
+        </label>
+        <div id="hamburger">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="apply.html">Apply</a>
+            <a href="about.html">About Us</a>
+            <a href="enhancements.html">Enhancements</a>
+            <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+        </div>
     </section>
 </nav>
-<!-- TOP OF PAGE - LOGO, NAVIGATION BAR -->
+<!---TOP OF PAGE - LOGO, NAVIGATION BAR--->
 
 <!-- APPLY PAGE MAIN CONTENT -->
 <main class="flex-container" id="main-form-container">
@@ -61,6 +62,7 @@
 						size="20"
 						pattern="^[^\W_]+$"
 						required> <!-- Excl nonword chars & "_" -->
+						<!-- above regex from: https://stackoverflow.com/questions/35324229/how-to-interpret-this-regular-expression-w-g-->
 			</div>
 		</fieldset>
 
@@ -277,31 +279,31 @@
 
 <!-- FOOTER -->
 <nav id="bottomnav">
-	<section class="navdesktop">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="jobs.html">Jobs</a></li>
-			<li><a href="apply.html">Apply</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="enhancements.html">Enhancements</a></li>
-			<li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
-		</ul>
-	</section>
+    <section class="navdesktop">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+            <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
+        </ul>
+    </section>
 
-	<section class="navmobile">
-		<input type="checkbox" id="menufooter">
-		<label for="menufooter" class="menuimage">
-			<img src="images/hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
-		</label>
-		<div id="hamburgerfooter">
-		<a href="index.html">Home</a>
-		<a href="jobs.html">Jobs</a>
-		<a href="apply.html">Apply</a>
-		<a href="about.html">About Us</a>
-		<a href="enhancements.html">Enhancements</a>
-		<a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-		</div>
-	</section>
+    <section class="navmobile">
+        <input type="checkbox" id="menufooter">
+        <label for="menufooter" class="menuimage">
+            <img src="images/hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
+        </label>
+        <div id="hamburgerfooter">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="apply.html">Apply</a>
+            <a href="about.html">About Us</a>
+            <a href="enhancements.html">Enhancements</a>
+            <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
+        </div>
+    </section>
 </nav>
 <footer>
 <p>&copy; 2024 PSIS. All Rights Reserved.</p>

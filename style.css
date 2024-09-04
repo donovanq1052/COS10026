@@ -29,148 +29,136 @@ body {
 /* TOP OF PAGE*/
 
 header {
-background-color:#77A6F7;
-margin: 10px;
-height: 90px;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+    background-color: #77a6f7;
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
-font-size: 3vw;
-text-align:center;
-font-family: "Century Gothic", "Gill Sans", sans-serif;
-margin: 0px;
-position: relative;
-top: 6%;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Century Gothic", "Gill Sans", sans-serif;
+    margin: 0px;
+    position: relative;
+    top: 6%;
 }
 
 #logo {
-margin-right: -10%;
-max-width: 100%;
-max-height: 100%;
-    
+    margin-right: -10%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* TOP OF PAGE*/
 
-/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/ 
+/* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/
 #hamburger {
-position: absolute;
-top: 10rem;
-left: 1.2rem;
-background: #00887A;
-z-index: 1;
-width: 200px;
-display: none;
+    position: absolute;
+    top: 10rem;
+    left: 1.2rem;
+    background: #00887a;
+    z-index: 1;
+    width: 200px;
+    display: none;
 }
 
 #hamburger a {
-color: #000;
-padding: .2em 1em;
-text-decoration: none;
-background-color: #4786F4;
-font-weight: bold;
-display: block;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
+    color: #000;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    background-color: #4786f4;
+    font-weight: bold;
+    display: block;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 #hamburger a:hover {
-color: #4786F4;
-background-color: #000;
+    color: #4786f4;
+    background-color: #000;
 }
 
 #menu {
-opacity: 0;
+    opacity: 0;
 }
 
 #menu:checked ~ #hamburger {
-display: block;
+    display: block;
 }
 
 .menuimage {
-float: inline-start;
+    float: inline-start;
 }
 
-.menu_icon {
-width: 35px;
-height: 5px;
-background-color: black;
-margin: 6px 0;
+#topnav {
+    padding: 10px;
+    background-color: #00887a;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-
-nav {
-padding: 10px;
-background-color:#00887A;
-margin: 10px;
-height: 35px;
-border-radius: 5px;
-text-align: center;
-            
-}
-    
-nav a {
-    
-text-decoration: none;
-padding: .2em 1em;
-color: #fff;
-background-color: #000;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
-}
-    
-nav a:hover{
-    
-color: #000;
-background-color: #fff;
+#topnav a {
+    text-decoration: none;
+    padding: 0.2em 1em;
+    color: #fff;
+    background-color: #000;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
-
+#topnav a:hover {
+    color: #000;
+    background-color: #fff;
+}
 
 /* NAVIGATION BAR/HAMBURGER MENU */
-
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
 
 #flexrow {
-display: flex;
-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .flexcolumn {
-display: flex;
-flex-flow: column wrap;
-justify-content: center;
-flex: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex: 50%;
 }
 
 .main {
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 100%;
-background-color:#77A6F7;
-                
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    background-color: #77a6f7;
 }
 
 .sideright {
-background-color:#4786F4;
-margin: 20px 10px 50px 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
+    background-color: #4786f4;
+    margin: 20px 10px 50px 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
 }
 
 #video {
-background-color: #77A6F7;
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 110%;
-width: 100%;
+    background-color: #77a6f7;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    width: 100%;
+}
+
+.link {
+color: #000;
 }
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
@@ -178,109 +166,103 @@ width: 100%;
 /* FOOTER */
 
 footer {
-background-color: #4786F4;
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-width: 100%;
-text-align: center;
+    background-color: #4786f4;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 #bottomnav {
-background-color: #00887A;
-margin: 10px;
-margin-bottom: 1px;
-height: 60px;
-clear: both;
-border-radius: 5px;
-text-align: start;
-padding: 15px;
-font-size: 90%;
-width: 100%;
+    background-color: #00887a;
+    margin: 10px;
+    margin-bottom: 1px;
+    height: 60px;
+    clear: both;
+    border-radius: 5px;
+    text-align: start;
+    padding: 15px;
+    font-size: 90%;
+    width: 100%;
 }
-    
+
 #bottomnav ul {
-    
-padding: 5px;
-margin: 10px;
-height: 35px;
-border-radius: 5px;
-text-align: center;
-                
+    padding: 5px;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
 }
-        
+
 #bottomnav ul li {
-    
-display: inline;
-    
+    display: inline;
 }
-    
+
 #bottomnav ul li a {
-text-decoration: none;      
-padding: .2em 1em;
-color: #fff;
-background-color: #000;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
-    
+    text-decoration: none;
+    padding: 0.2em 1em;
+    color: #fff;
+    background-color: #000;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
-        
-#bottomnav ul li a:hover{
-        
-color: #000;
-background-color: #fff;
+
+#bottomnav ul li a:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 #hamburgerfooter {
-position: relative;
-bottom: 165px;
-left: -14px;
-background: #00887A;
-width: 200px;
-display: none;
+    position: relative;
+    bottom: 165px;
+    left: -14px;
+    background: #00887a;
+    width: 200px;
+    display: none;
 }
 
 #hamburgerfooter a {
-color: #000;
-padding: .2em 1em;
-text-decoration: none;
-background-color: #4786F4;
-font-weight: bold;
-display: block;
-transition: color 0.2s ease-in;
-transition: background-color 0.2s ease-in;
+    color: #fff;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    background-color: #000;
+    font-weight: bold;
+    display: block;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 #hamburgerfooter a:hover {
-background-color: #000;
-color: #4786F4;
+    background-color: #fff;
+    color: #000;
 }
 
 #menufooter {
-opacity: 0;
+    opacity: 0;
 }
 
 #menufooter:checked ~ #hamburgerfooter {
-display: block;
+    display: block;
 }
-
 
 @media screen and (max-width: 680px) {
-#navdesktop {
-display: none;
-}
-.flexcolumn {
-flex: 100%;
-}
-footer p {
-position: sticky;
-}
+    .navdesktop {
+        display: none;
+    }
+
+    .flexcolumn {
+        flex: 100%;
+    }
+    footer p {
+        position: sticky;
+    }
 }
 
 @media screen and (min-width: 681px) {
-#navmobile {
-display: none;
-}
+    .navmobile {
+        display: none;
+    }
 }
 
 /* Jobs Page */
