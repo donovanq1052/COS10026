@@ -14,7 +14,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 
 * {
 	box-sizing: border-box;
-	max-width: 95svw;;
+	max-width: 97.5svw;;
 }
 
 /* BACKGROUND */
@@ -268,7 +268,7 @@ footer {
 #jobs-page {
     box-sizing: border-box;
     margin: auto;
-    width: 97svw;
+    width: 95svw;
     font-family: Arial, Helvetica, sans-serif;
 }
 .main-job-box {
