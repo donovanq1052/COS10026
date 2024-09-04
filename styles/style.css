@@ -15,7 +15,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg"); /* Taken under free use license from vecteezy.com */
+    background-image: url("images/background.jpg"); /* Taken under free use license from vecteezy.com */
 	font-family: Verdana, Georgia, sans-serif
 }
 
