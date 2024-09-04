@@ -7,7 +7,6 @@
         <meta name="keywords" content="Software, IT, Business, Solutions, Homepage" />
         <meta name="author" content="Matthew Xu" />
         <link type="text/css" rel="stylesheet" href="style.css" />
-        <script type="text/javascript" src="script.js"></script>
         <title>Jobs | PSIS</title>
     </head>
     <body>
@@ -41,8 +40,8 @@ subsections, lists etc. using the appropriate HTML elements. -->
             <div></div>
         </header>
 
-        <nav>
-            <section id="navdesktop">
+        <nav id="topnav">
+            <section class="navdesktop">
                 <a href="index.html">Home</a>
                 <a href="jobs.html">Jobs</a>
                 <a href="apply.html">Apply</a>
@@ -50,13 +49,11 @@ subsections, lists etc. using the appropriate HTML elements. -->
                 <a href="enhancements.html">Enhancements</a>
                 <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
             </section>
-
-            <section id="navmobile">
-                <input type="checkbox" id="menu" />
+        
+            <section class="navmobile">
+                <input type="checkbox" id="menu">
                 <label for="menu" class="menuimage">
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
+                    <img src="images/hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
                 </label>
                 <div id="hamburger">
                     <a href="index.html">Home</a>
@@ -525,26 +522,22 @@ subsections, lists etc. using the appropriate HTML elements. -->
                 </div>
             </section>
         </main>
-        <section id="bottomnav">
-            <div id="navdesktop">
+        <nav id="bottomnav">
+            <section class="navdesktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="apply.html">Apply</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="enhancements.html">Enhancements</a></li>
-                    <li>
-                        <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-                    </li>
+                    <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
                 </ul>
-            </div>
-
-            <div id="navmobile">
-                <input type="checkbox" id="menufooter" />
+            </section>
+        
+            <section class="navmobile">
+                <input type="checkbox" id="menufooter">
                 <label for="menufooter" class="menuimage">
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
+                    <img src="images/hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
                 </label>
                 <div id="hamburgerfooter">
                     <a href="index.html">Home</a>
@@ -554,8 +547,8 @@ subsections, lists etc. using the appropriate HTML elements. -->
                     <a href="enhancements.html">Enhancements</a>
                     <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
                 </div>
-            </div>
-        </section>
+            </section>
+        </nav>
         <footer>
             <p>&copy; 2024 PSIS. All Rights Reserved.</p>
         </footer>
