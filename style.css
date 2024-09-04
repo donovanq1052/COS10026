@@ -279,21 +279,57 @@ display: none;
 
 /* Jobs Page */
 #jobs-page {
-    width: 80svw;
+    box-sizing: border-box;
     margin: auto;
+    width: 97svw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main-job-box {
+    background-color: var(--accent);
+    border-radius: 20px;
+    padding: 2svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.job-box {
+    border: dashed 2px var(--primary);
+    border-radius: 20px;
+    padding: 2em;
+    width: 60%;
+    margin-top: 1em;
+}
+.job-content {
+    border-top: solid 1px var(--primary);
+}
+.jobs-subtitle {
+    font-style: italic;
+}
+.main-content {
+    margin-right: 5em;
+}
+.reference {
+    font-weight: bold;
+}
+.reference a {
+    color: black;
+}
+.apply-btn {
+    text-decoration: none;
     background-color: var(--primary);
+    color: black;
+    padding: 1em 2em;
+    border-radius: 6px;
+    margin: 1em 0;
 }
-/* Truncates overflow text */
-.jobs-summary {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 /* Content expands when toggled by user */
 .expandable-content {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease; /* Transition and animation properties */
 }
 .job-content {
     display: grid;
@@ -306,22 +342,95 @@ display: none;
     grid-column: 2/3;
 }
 
+#sunshine-link {
+    color: black;
+}
+
 /* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
 .toggle {
     display: none;
 }
-
-#expand-toggle:checked ~ #job1 {
-    display: block;
+#job1-expand-toggle:checked ~ #job1 {
+    height: 60svh;
+    opacity: 1;
 }
-#expand-toggle:checked ~ #expand-btn{
+#job1-expand-toggle:checked ~ #job1-expand-btn {
     visibility: hidden;
 }
-#collapse-toggle:checked ~ #job1 {
-    display: none;
+#job2-expand-toggle:checked ~ #job2 {
+    height: 65svh;
+    opacity: 1;
+}
+#job2-expand-toggle:checked ~ #job2-expand-btn {
+    visibility: hidden;
+}
+#job3-expand-toggle:checked ~ #job3 {
+    height: 65svh;
+    opacity: 1;
+}
+#job3-expand-toggle:checked ~ #job3-expand-btn {
+    visibility: hidden;
+}
+#job4-expand-toggle:checked ~ #job4 {
+    height: 65svh;
+    opacity: 1;
+}
+#job4-expand-toggle:checked ~ #job4-expand-btn {
+    visibility: hidden;
+}
+#job5-expand-toggle:checked ~ #job5 {
+    height: 65svh;
+    opacity: 1;
+}
+#job5-expand-toggle:checked ~ #job5-expand-btn {
+    visibility: hidden;
 }
 
-/* use footer from other pages */
+@media (width < 1200px) {
+    .job-box {
+        width: 70svw;
+    }
+    .job-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #job1-expand-toggle:checked ~ #job1 {
+        height: auto;
+    }
+    #job2-expand-toggle:checked ~ #job2 {
+        height: auto;
+    }
+    #job3-expand-toggle:checked ~ #job3 {
+        height: auto;
+    }
+    #job4-expand-toggle:checked ~ #job4 {
+        height: auto;
+    }
+    #job5-expand-toggle:checked ~ #job5 {
+        height: auto;
+    }
+}
+
+@media (width >= 1200px) and (width < 1600px) {
+    .job-box {
+        width: 75svw;
+    }
+    #job1-expand-toggle:checked ~ #job1 {
+        height: 70svh;
+    }
+    #job2-expand-toggle:checked ~ #job2 {
+        height: 70svh;
+    }
+    #job3-expand-toggle:checked ~ #job3 {
+        height: 70svh;
+    }
+    #job4-expand-toggle:checked ~ #job4 {
+        height: 70svh;
+    }
+    #job5-expand-toggle:checked ~ #job5 {
+        height: 70svh;
+    }
+}
 
 /* ----------------------------- Apply Page -------------------------------- */
 
