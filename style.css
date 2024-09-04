@@ -332,47 +332,51 @@ footer {
 #sunshine-link {
     color: black;
 }
+.button-div {
+	margin: 1em 0;
+}
 
 /* Toggle acts as a button to display/collapse content. Toggle checkbox itself is hidden but function is activated with associated labels.*/
 .toggle {
     display: none;
 }
 #job1-expand-toggle:checked ~ #job1 {
-    height: 60svh;
+    height: auto;
     opacity: 1;
 }
 #job1-expand-toggle:checked ~ #job1-expand-btn {
     visibility: hidden;
 }
 #job2-expand-toggle:checked ~ #job2 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job2-expand-toggle:checked ~ #job2-expand-btn {
     visibility: hidden;
 }
 #job3-expand-toggle:checked ~ #job3 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job3-expand-toggle:checked ~ #job3-expand-btn {
     visibility: hidden;
 }
 #job4-expand-toggle:checked ~ #job4 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job4-expand-toggle:checked ~ #job4-expand-btn {
     visibility: hidden;
 }
 #job5-expand-toggle:checked ~ #job5 {
-    height: 65svh;
+    height: auto;
     opacity: 1;
 }
 #job5-expand-toggle:checked ~ #job5-expand-btn {
     visibility: hidden;
 }
 
+/* Media queries adjust sizing and layout of content to be optimised for medium and smaller screens */
 @media (width < 1200px) {
     .job-box {
         width: 70svw;
@@ -381,41 +385,11 @@ footer {
         display: flex;
         flex-direction: column-reverse;
     }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: auto;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: auto;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: auto;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: auto;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: auto;
-    }
 }
 
 @media (width >= 1200px) and (width < 1600px) {
     .job-box {
         width: 75svw;
-    }
-    #job1-expand-toggle:checked ~ #job1 {
-        height: 70svh;
-    }
-    #job2-expand-toggle:checked ~ #job2 {
-        height: 70svh;
-    }
-    #job3-expand-toggle:checked ~ #job3 {
-        height: 70svh;
-    }
-    #job4-expand-toggle:checked ~ #job4 {
-        height: 70svh;
-    }
-    #job5-expand-toggle:checked ~ #job5 {
-        height: 70svh;
     }
 }
 
