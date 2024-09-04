@@ -12,6 +12,12 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
     --accent: #77A6F7;
 }
 
+* {
+	box-sizing: border-box;
+	max-width: 98svw;;
+	margin: 0;
+}
+
 /* BACKGROUND */
 
 body {
