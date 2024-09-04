@@ -15,6 +15,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 * {
 	box-sizing: border-box;
 	max-width: 97.5svw;;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* BACKGROUND */
@@ -316,7 +317,8 @@ footer {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: height 0.3s ease, opacity 0.3s ease; /* Transition and animation properties */
+    /* Transition animation for change in height and opacity */
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 .job-content {
     display: grid;
@@ -332,6 +334,7 @@ footer {
 #sunshine-link {
     color: black;
 }
+/* anchor tags nested inside button-divs so that inline anchor padding is respected by parent div */
 .button-div {
 	margin: 1em 0;
 }
@@ -340,6 +343,7 @@ footer {
 .toggle {
     display: none;
 }
+/* Each job box id is manually targetted according to each 'expand' job label */
 #job1-expand-toggle:checked ~ #job1 {
     height: auto;
     opacity: 1;
