@@ -40,7 +40,7 @@ subsections, lists etc. using the appropriate HTML elements. -->
             <div></div>
         </header>
 
-        <nav>
+        <nav id="topnav">
             <section id="navdesktop">
                 <a href="index.html">Home</a>
                 <a href="jobs.html">Jobs</a>
@@ -53,9 +53,7 @@ subsections, lists etc. using the appropriate HTML elements. -->
             <section id="navmobile">
                 <input type="checkbox" id="menu" />
                 <label for="menu" class="menuimage">
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
+                    <img src="hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
                 </label>
                 <div id="hamburger">
                     <a href="index.html">Home</a>
@@ -524,26 +522,22 @@ subsections, lists etc. using the appropriate HTML elements. -->
                 </div>
             </section>
         </main>
-        <section id="bottomnav">
-            <div id="navdesktop">
+        <nav id="bottomnav">
+            <section class="navdesktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="apply.html">Apply</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="enhancements.html">Enhancements</a></li>
-                    <li>
-                        <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
-                    </li>
+                    <li><a href="mailto:105260032@student.swin.edu.au">Contact Us</a></li>
                 </ul>
-            </div>
-
-            <div id="navmobile">
-                <input type="checkbox" id="menufooter" />
+            </section>
+        
+            <section class="navmobile">
+                <input type="checkbox" id="menufooter">
                 <label for="menufooter" class="menuimage">
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
-                    <div class="menu_icon"></div>
+                    <img src="hamburgermenuicon.png" alt="Drop Down Menu"> <!--Image from https://en.m.wikipedia.org/wiki/File:Hamburger_icon.svg-->
                 </label>
                 <div id="hamburgerfooter">
                     <a href="index.html">Home</a>
@@ -553,8 +547,8 @@ subsections, lists etc. using the appropriate HTML elements. -->
                     <a href="enhancements.html">Enhancements</a>
                     <a href="mailto:105260032@student.swin.edu.au">Contact Us</a>
                 </div>
-            </div>
-        </section>
+            </section>
+        </nav>
         <footer>
             <p>&copy; 2024 PSIS. All Rights Reserved.</p>
         </footer>
