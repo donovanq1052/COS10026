@@ -55,7 +55,7 @@ h1 {
 /* TOP OF PAGE*/
 
 /* NAVIGATION BAR / HAMBURGER MENU - Nav bar + enhancement made by Donovan*/
-#hamburger {
+#hamburger { /* drop down hamburger menu */
     position: absolute;
     top: 10rem;
     left: 1.2rem;
@@ -89,7 +89,7 @@ h1 {
     display: block;
 }
 
-.menuimage {
+.menuimage { /* hamburger menu image lable */
     float: inline-start;
 }
 
@@ -120,19 +120,19 @@ h1 {
 
 /* INDEX.HTML and ENHANCEMENTS.HTML CONTENT */
 
-#flexrow {
+#flexrow { /* Flex displays for index.html content */
     display: flex;
     flex-flow: row wrap;
 }
 
-.flexcolumn {
+.flexcolumn { /* Flex displays for index.html content */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     flex: 50%;
 }
 
-.main {
+.main { /* Left side content of index.html */
     margin: 10px;
     border-radius: 5px;
     padding: 20px;
@@ -140,7 +140,7 @@ h1 {
     background-color: #77a6f7;
 }
 
-.sideright {
+.sideright { /* Right side content of index.html */
     background-color: #4786f4;
     margin: 20px 10px 50px 10px;
     border-radius: 5px;
@@ -148,7 +148,7 @@ h1 {
     font-size: 105%;
 }
 
-#video {
+#video { /* Youtube link content */
     background-color: #77a6f7;
     margin: 10px;
     border-radius: 5px;
@@ -187,7 +187,7 @@ footer {
     width: 100%;
 }
 
-#bottomnav ul { 
+#bottomnav ul { /* Navigation buttons for bottom navigation bar */
     padding: 5px;
     margin: 10px;
     height: 35px;
@@ -208,12 +208,12 @@ footer {
     transition: background-color 0.2s ease-in;
 }
 
-#bottomnav ul li a:hover {
+#bottomnav ul li a:hover { /* Inverts colours of bottom navigation buttons when hovered */
     color: #000;
     background-color: #fff;
 }
 
-#hamburgerfooter {
+#hamburgerfooter { /* Drop down menu for bottom navigation bar */
     position: relative;
     bottom: 165px;
     left: -14px;
@@ -233,7 +233,7 @@ footer {
     transition: background-color 0.2s ease-in;
 }
 
-#hamburgerfooter a:hover {
+#hamburgerfooter a:hover { /* Inverts colours for bottom hamburger menu when hovered */
     background-color: #fff;
     color: #000;
 }
@@ -242,7 +242,7 @@ footer {
     opacity: 0;
 }
 
-#menufooter:checked ~ #hamburgerfooter {
+#menufooter:checked ~ #hamburgerfooter { /* Displays drop down menu when checkbox is checked */
     display: block;
 }
 
