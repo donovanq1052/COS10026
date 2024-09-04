@@ -463,22 +463,46 @@ textarea {
 
 /* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
 
+.leftside {
 
+background-color:#4786F4;
+font-family: Verdana, Georgia, sans-serif;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 0px;
+margin-bottom: 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+float: left;
+width: 260px;
+clear: left;
+    
+}
+    
+    .aboutrightside {
+
+        background-color:#77A6F7;
+        margin-left: 320px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 110%;
+        font-family: Verdana, Georgia, sans-serif;
+                        
+        }
 
 #group-photo {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 40px;
-	margin-top: 40px;
-   
-
+    
 }
 
 #our-members{
     display: flex;
     justify-content: center;
-	flex-wrap: wrap;
-	
 }
 
 #our-members div{
@@ -487,11 +511,6 @@ textarea {
     border-radius: 30px;
     font-size: small;
 	margin: 0.5%;
-	width: 240px;
-	height: 340px;
-	margin-bottom: 40px;
-	
-	
     
 }
 
@@ -500,7 +519,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-	opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+    opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
 }
 
 #donovan:hover{
@@ -552,13 +571,13 @@ textarea {
 	border-collapse: collapse;
 	margin:25px 0;
 	font-size: 0.9em;
-	min-width: 400px;
-	margin-bottom: 40px;
+	min-width: 400px
 }
 
 
 #timetable thead tr{
 	background-color: #4786F4;
+	color: rgb(255, 255, 255);
 	text-align: left;
 	font-weight: bold;
 }
@@ -578,74 +597,7 @@ textarea {
 #timetable tbody tr:last-of-type {
 	border-bottom: 2px solid #4786F4;
 }
-#table-parent {
+.table-parent {
     display: flex;
     justify-content: center;
-}
-/*Modified version of donavans h1 style*/
-#timetable-heading {
-	font-size: 3vw;
-	text-align:center;
-	font-family: "Century Gothic", "Gill Sans", sans-serif;
-	margin: 0px;
-	position: relative;
-	top: 6%;
-	}
-
-
-
-#dl-container{
-    display: flex;
-    justify-content: center;
-}
-
-#dl-container div{
-	flex: 1;
-    padding: 2%;
-    border-radius: 30px;
-    font-size: medium;
-	margin: 0.5%;
-	text-align: center;
-	max-width: 300px;
-	
-}
-
-#aboutleftside {
-	background-color:#77A6F7;
-}
-
-#aboutrightside {
-	background-color: #4786F4;
-}
-
-/* Generative AI */
-#dl-container dl {
-    display: flex;             /* Use flexbox for the definition list */
-    flex-wrap: wrap;           /* Allow items to wrap to the next line if needed */
-    justify-content: space-between; /* Distribute space between items */
-    margin: 0;                 /* Remove default margins */
-    padding: 0;                /* Remove default padding */
-	
-}
-
-#dl-container dt {
-    flex: 0 0 150px;           /* Fixed width for dt elements (adjust as needed) */
-    font-weight: bold;         /* Bold text for dt elements */
-    text-align: left;          /* Align text to the left */
-	margin-bottom: 10px;
-}
-
-#dl-container dd {
-    flex: 1;                   /* Take remaining space for dd elements */
-    margin: 0;                 /* Remove default margin */
-    text-align: left;          /* Align text to the left */
-	margin-bottom: 10px;
-}
-
-
-/*Generative AI*/
-#contact {
-    display: block; /* Change this to block to make elements stack vertically */
-    text-align: center; /* Center-align text if desired */
-	margin-bottom: 40px;
 }
