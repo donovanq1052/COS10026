@@ -75,7 +75,7 @@ h1 {
     transition: background-color 0.2s ease-in;
 }
 
-#hamburger a:hover {
+#hamburger a:hover { /*Inverts the hamburger menu colors when hovered over */
     color: #4786f4;
     background-color: #000;
 }
@@ -84,7 +84,7 @@ h1 {
     opacity: 0;
 }
 
-#menu:checked ~ #hamburger {
+#menu:checked ~ #hamburger { /* Checkbox that displays the hamburger menu when checked */
     display: block;
 }
 
@@ -92,7 +92,7 @@ h1 {
     float: inline-start;
 }
 
-#topnav {
+#topnav { /* Top navigation bar for desktop displays */
     padding: 10px;
     background-color: #00887a;
     margin: 10px;
@@ -110,7 +110,7 @@ h1 {
     transition: background-color 0.2s ease-in;
 }
 
-#topnav a:hover {
+#topnav a:hover { /* Changes the colour of the desktop navigation buttons when hovered over */
     color: #000;
     background-color: #fff;
 }
@@ -156,7 +156,7 @@ h1 {
     width: 100%;
 }
 
-.link {
+.link { /* Makes all hyperlinks black to fit with accessiblity guidelines */
 color: #000;
 }
 
@@ -173,7 +173,7 @@ footer {
     text-align: center;
 }
 
-#bottomnav {
+#bottomnav { /* Bottom navigation bar */
     background-color: #00887a;
     margin: 10px;
     margin-bottom: 1px;
@@ -186,7 +186,7 @@ footer {
     width: 100%;
 }
 
-#bottomnav ul {
+#bottomnav ul { 
     padding: 5px;
     margin: 10px;
     height: 35px;
