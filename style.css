@@ -96,7 +96,7 @@ margin: 6px 0;
 }
 
 
-nav {
+#topnav {
 padding: 10px;
 background-color:#00887A;
 margin: 10px;
@@ -106,7 +106,7 @@ text-align: center;
             
 }
     
-nav a {
+#topnav a {
     
 text-decoration: none;
 padding: .2em 1em;
@@ -116,7 +116,7 @@ transition: color 0.2s ease-in;
 transition: background-color 0.2s ease-in;
 }
     
-nav a:hover{
+#topnav a:hover{
     
 color: #000;
 background-color: #fff;
