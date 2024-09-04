@@ -21,7 +21,7 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 /* BACKGROUND */
 
 body {
-    background-image: url("background.jpg"); /* Taken under free use license from vecteezy.com */
+    background-image: url("images/background.jpg"); /* Taken under free use license from vecteezy.com */
 	font-family: Verdana, Georgia, sans-serif
 }
 
@@ -548,7 +548,7 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 #donovan{
-    background-image: url(Donovanportrait.jpg);
+    background-image: url(images/Donovanportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -561,7 +561,7 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 #matthew{
-    background-image: url(Matthewportrait.jpg);
+    background-image: url(images/Matthewportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -574,7 +574,7 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 #reeve{
-    background-image: url(Reeveportrait.jpg);
+    background-image: url(images/Reeveportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -587,7 +587,7 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 #riley{
-    background-image: url(Rileyportrait.jpg);
+    background-image: url(images/Rileyportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
