@@ -740,14 +740,14 @@ textarea {
 }
 
 #dl-container dt {
-    flex: 0 0 150px;           /* Fixed width for dt elements (adjust as needed) */
+    
     font-weight: bold;         /* Bold text for dt elements */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
 }
 
 #dl-container dd {
-    flex: 1;                   /* Take remaining space for dd elements */
+    
     margin: 0;                 /* Remove default margin */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
