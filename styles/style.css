@@ -632,11 +632,10 @@ input[type="text"], input[type="email"], select, textarea {
 #timetable-heading {
 	font-size: 3vw;
 	text-align:center;
-	font-family: "Century Gothic", "Gill Sans", sans-serif;
 	margin: 0px;
 	position: relative;
 	top: 6%;
-	}
+}
 
 
 
