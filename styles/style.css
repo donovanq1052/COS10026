@@ -16,13 +16,14 @@ description: A style sheet for the PSIS index, apply, about and jobs pages. Part
 	box-sizing: border-box;
 	max-width: 97.5svw;;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2;
 }
 
 /* BACKGROUND */
 
 body {
     background-image: url("images/background.jpg"); /* Taken under free use license from vecteezy.com */
-	font-family: Verdana, Georgia, sans-serif
 }
 
 
@@ -40,7 +41,6 @@ header {
 h1 {
     font-size: 3vw;
     text-align: center;
-    font-family: "Century Gothic", "Gill Sans", sans-serif;
     margin: 0px;
     position: relative;
     top: 6%;
