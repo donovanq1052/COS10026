@@ -511,43 +511,38 @@ input[type="text"], input[type="email"], select, textarea {
 
 /* About Page */
 
-/* ABOUT.HTML LEFT  SIDE CONTENT (Modified version of Donovans)*/
-
-
-
 #group-photo {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 40px;
 	margin-top: 40px;
-   
-
 }
 
 /* Our members section inspired by Ati's Doki page from live tutorial)*/
-
-#our-members{
+#our-members {
     display: flex;
     justify-content: center;
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 }
 
-#our-members div{
+#our-members div {
+    position: relative;
     border: #4786F4 solid 2px;
     padding: 2%;
     border-radius: 30px;
     font-size: small;
 	margin: 0.5%;
-	width: 240px;
+	width: 280px;
 	height: 340px;
 	margin-bottom: 40px;
-	
-	
-    
+    overflow: hidden; 
+    display: flex; /* Generative AI Enables flexbox */
+    flex-direction: column; /* Generative AI Stacks children vertically */
+    align-items: center; /* Generative AI Centers children horizontally */
 }
 
-#donovan{
+#donovan {
+    position: relative;
     background-image: url(images/Donovanportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -555,12 +550,13 @@ input[type="text"], input[type="email"], select, textarea {
 	opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
 }
 
-#donovan:hover{
+#donovan:hover {
     opacity:1;
     background: rgba(255, 255, 255, 0.8);
 }
 
-#matthew{
+#matthew {
+    position: relative;
     background-image: url(images/Matthewportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -568,12 +564,13 @@ input[type="text"], input[type="email"], select, textarea {
     opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
 }
 
-#matthew:hover{
+#matthew:hover {
     opacity:1;
     background: rgba(255, 255, 255, 0.8);
 }
 
-#reeve{
+#reeve {
+    position: relative;
     background-image: url(images/Reeveportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -581,12 +578,13 @@ input[type="text"], input[type="email"], select, textarea {
     opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
 }
 
-#reeve:hover{
+#reeve:hover {
     opacity:1;
     background: rgba(255, 255, 255, 0.8);
 }
 
-#riley{
+#riley {
+    position: relative;
     background-image: url(images/Rileyportrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -594,13 +592,23 @@ input[type="text"], input[type="email"], select, textarea {
     opacity: 0.8; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
 }
 
-#riley:hover{
+#riley:hover {
     opacity:1;
     background: rgba(255, 255, 255, 0.8);
 }
-/* CSS for timetable inspired by https://www.youtube.com/watch?v=biI9OFH6Nmg */
 
-#timetable{
+/*Generative AI for h2 styling*/
+#our-members h2 {
+    position: relative; /* Position relative to its parent container */
+    margin: 0; /* Removes default margin */
+    margin-bottom: 10px; /* Adds space below the heading */
+    text-align: center; /* Centers the text */
+    flex-shrink: 0; /* Prevents the heading from shrinking when the container is resized */
+    width: 100%; /* Ensures the heading spans the full width of the parent */
+}
+
+/* CSS for timetable inspired by https://www.youtube.com/watch?v=biI9OFH6Nmg*/
+#timetable {
 	border-collapse: collapse;
 	margin:25px 0;
 	font-size: 0.9em;
@@ -608,22 +616,21 @@ input[type="text"], input[type="email"], select, textarea {
 	margin-bottom: 40px;
 }
 
-
-#timetable thead tr{
+#timetable thead tr {
 	background-color: #4786F4;
 	text-align: left;
 	font-weight: bold;
 }
 
-#timetable th, td{
+#timetable th, td {
 	padding:12px 15px
 }
 
-#timetable tbody tr:nth-of-type(even){
+#timetable tbody tr:nth-of-type(even) {
 	background-color: #f3f3f3;
 }
 
-#timetable tbody tr:nth-of-type(odd){
+#timetable tbody tr:nth-of-type(odd) {
 	background-color:#ffffff;
 }
 
@@ -634,6 +641,7 @@ input[type="text"], input[type="email"], select, textarea {
     display: flex;
     justify-content: center;
 }
+
 /*Modified version of donavans h1 style*/
 #timetable-heading {
 	font-size: 3vw;
@@ -644,14 +652,12 @@ input[type="text"], input[type="email"], select, textarea {
 	top: 6%;
 	}
 
-
-
-#dl-container{
+#dl-container {
     display: flex;
     justify-content: center;
 }
 
-#dl-container div{
+#dl-container div {
 	flex: 1;
     padding: 2%;
     border-radius: 30px;
@@ -659,7 +665,6 @@ input[type="text"], input[type="email"], select, textarea {
 	margin: 0.5%;
 	text-align: center;
 	max-width: 300px;
-	
 }
 
 #aboutleftside {
@@ -670,32 +675,34 @@ input[type="text"], input[type="email"], select, textarea {
 	background-color: #4786F4;
 }
 
-/* Generative AI */
+/* Generative AI for description list*/
 #dl-container dl {
     display: flex;             /* Use flexbox for the definition list */
     flex-wrap: wrap;           /* Allow items to wrap to the next line if needed */
     justify-content: space-between; /* Distribute space between items */
     margin: 0;                 /* Remove default margins */
     padding: 0;                /* Remove default padding */
-	
+	width: 100%;               /* Ensure the dl takes full width of the container */
 }
 
 #dl-container dt {
-    
+    width: 40%;
     font-weight: bold;         /* Bold text for dt elements */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
+    padding-right: 10px; /* Add padding to the right to prevent text from touching */
 }
 
 #dl-container dd {
-    
+    width: 55%;
     margin: 0;                 /* Remove default margin */
     text-align: left;          /* Align text to the left */
 	margin-bottom: 10px;
+    padding-left: 25px;
 }
 
 
-/*Generative AI*/
+/*Generative AI for contact us*/
 #contact {
     display: block; /* Change this to block to make elements stack vertically */
     text-align: center; /* Center-align text if desired */
