@@ -212,7 +212,7 @@ footer {
 
 #hamburgerfooter { /* Drop down menu for bottom navigation bar */
     position: relative;
-    bottom: 165px;
+    bottom: 185px;
     left: -14px;
     background: #00887a;
     width: 200px;
