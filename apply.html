@@ -52,7 +52,7 @@
 
 		<!-- job reference number, uses same style classes as fieldsets -->
 		<fieldset class="flex-container fieldset-container">
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<label for="job-ref">Your Job Reference Number</label> 
 				<input  type="text"
 						name="job-ref"
@@ -63,12 +63,12 @@
 						pattern="^[^\W_]+$"
 						required> <!-- Excl nonword chars & "_" -->
 						<!-- above regex from: https://stackoverflow.com/questions/35324229/how-to-interpret-this-regular-expression-w-g-->
-			</div>
+			</section>
 		</fieldset>
 
 		<!-- name & date of birth, uses same style classes as fieldsets -->
 		<fieldset class="flex-container fieldset-container">
-			<div class="input-section">
+			<section class="input-section">
 				<!-- first name -->
 				<div class="input-sub-section">
 					<label for="first-name">First Name</label> 
@@ -89,9 +89,9 @@
 							size="20"
 							pattern="^[^\W\d_]+$" required> <!-- Excl. nonword, digits & "_" -->
 				</div>
-			</div>
+			</section>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<label for="date-of-birth">Date of Birth</label> 
 				<input  type="text"
 						name="date-of-birth"
@@ -102,43 +102,43 @@
 						pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" required>
 				<!-- Validates dates in DD/MM/YYYY format -->
 				<!-- above regex from: https://stackoverflow.com/questions/15491894/regex-to-validate-date-formats-dd-mm-yyyy-dd-mm-yyyy-dd-mm-yyyy-dd-mmm-yyyy -->
-			</div>
+			</section>
 		</fieldset>
 
 		<!-- Gender details -->
 		<fieldset class="flex-container fieldset-container">
 			<legend>GENDER</legend>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<input  type="radio"
 				name="gender"
 				id="radio-gender-male"
 				value="male" checked>
 				<label for="radio-gender-male">Male</label>
-			</div>
+			</section>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<input  type="radio"
 						name="gender"
 						id="radio-gender-female"
 						value="female">
 				<label for="radio-gender-female">Female</label> 
-			</div>
+			</section>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<input  type="radio"
 						name="gender"
 						id="radio-gender-other"
 						value="other">
 				<label for="radio-gender-other">Other</label> 
-				</div>
+			</section>
 		</fieldset>
 
 		<!-- Address details -->
 		<fieldset class="flex-container fieldset-container">
 			<legend>ADDRESS</legend>
 
-			<div class="input-section">
+			<section class="input-section">
 				<div class="input-sub-section">
 					<label for="address-street">Street Address</label>
 					<input  type="text"
@@ -156,9 +156,9 @@
 							maxlength="40"
 							size="20" required>
 				</div>
-			</div>
+			</section>
 
-			<div class="input-section">
+			<section class="input-section">
 				<div class="input-sub-section">
 					<label for="address-state">State</label>
 					<select name="state" id="address-state" required>
@@ -184,7 +184,7 @@
 							placeholder="Eg: 1234"
 							pattern="^[\d]+$" required>
 				</div>
-			</div>
+			</section>
 
 		</fieldset>
 
@@ -192,7 +192,7 @@
 		<fieldset class="flex-container fieldset-container">
 			<legend>CONTACT</legend>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<label for="input-email">Email</label> 
 				<input  type="email"
 						name="email-address"
@@ -200,9 +200,9 @@
 						placeholder="Eg: johndoe@pss.com"
 						maxlength="50"
 						size="20" required>
-			</div>
+			</section>
 
-			<div class="input-sub-section">
+			<section class="input-sub-section">
 				<label for="input-phone">Phone</label>
 				<input  type="text"
 						name="phone-number"
@@ -212,7 +212,7 @@
 						size="20"
 						placeholder="Eg: 0400111222"
 						pattern="^[0-9 ]+$" required>
-			</div>
+			</section>
 		</fieldset>
 
 		<!-- Skills details -->
@@ -220,7 +220,7 @@
 			<legend>I HAVE EXPERIENCE WITH:</legend>
 
 			<!-- checkboxes for skills, IDs only for input-label association -->
-			<div class="flex-container">
+			<section class="flex-container">
 				<div class="input-sub-section">
 					<input type="checkbox" id="checkbox-exp-default" name="git" value="git" checked required>
 					<label for="checkbox-exp-default">Git</label>
@@ -253,10 +253,9 @@
 					<input type="checkbox" id="checkbox-exp-other" name="other" value="other" checked required>
 					<label for="checkbox-exp-other">Other skills</label>
 				</div>
-			</div>
+			</section>
 
-
-			<div class="input-sub-section" id="other-skills-container">
+			<section class="input-sub-section" id="other-skills-container">
 				<label for="textarea-other-skills">Other Skills</label> 
 				<textarea	id="textarea-other-skills"
 							name="other-skills"
@@ -264,15 +263,15 @@
 							cols="40"
 							placeholder="I have experience with ..."
 							required></textarea>
-			</div>
+			</section>
 
 		</fieldset>
 
 		<!-- Apply (submit) and Clear (reset) buttons -->
-		<div class="input-section" id="control-btn-section">
+		<section class="input-section" id="control-btn-section">
 			<input type="submit" class="form-control-button" value="APPLY">
 			<input type="reset" class="form-control-button" value="CLEAR">
-		</div>
+		</section>
 	</form>
 </main>
 <!-- APPLY PAGE MAIN CONTENT -->
